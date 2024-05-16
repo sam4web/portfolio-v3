@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    transition: all 130ms linear;
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply w-full h-screen font-poppins bg-[#edf6f9] dark:bg-dark;
+  }
+}
+
+@layer utilities {
+  .text-responsive {
+    @apply text-dark dark:text-light;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+}
+
+@layer components {
+  .theme-toggle-btn {
+    @apply rounded-md cursor-pointer dark:bg-gray-700 bg-gray-300 px-2.5 py-2.5 shadow-sm outline-none text-responsive;
+  }
+
+  .toggle-bar {
+    @apply w-[26px] h-[3px] rounded-full bg-dark dark:bg-light relative before:top-2 after:bottom-2;
+
+    &::after,
+    &::before {
+      @apply content-[''] w-[inherit] h-[inherit] absolute bg-inherit left-0 rounded-full;
+    }
+
+    &-active {
+      @apply before:opacity-0 rotate-45 after:rotate-90 after:bottom-0;
+    }
+  }
+}
