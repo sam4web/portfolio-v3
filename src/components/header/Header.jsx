@@ -21,25 +21,29 @@ const Header = () => {
   };
 
   return (
-    <header className='bg-light dark:bg-dark shadow-sm'>
+    <header>
       <Sidenav active={showSidenav} />
-
       <BodyOverlay active={showSidenav} handleClick={toggleSidenav} />
 
-      <div className='flex-between py-4 lg:py-6 px-4 lg:px-7 max-w-screen-md lg:max-w-screen-xl mx-auto'>
-        <LogoText />
+      <div className='bg-light dark:bg-dark shadow-sm'>
+        <div className='flex-between py-4 lg:py-6 px-4 lg:px-7 max-w-screen-md lg:max-w-screen-xl mx-auto'>
+          <LogoText />
 
-        <ul className='md:flex-center space-x-3.5 hidden'>
-          {NAV_LINKS.map((link, idx) => (
-            <li key={idx} className='capitalize text-lg text-responsive'>
-              <a href={link.ref}>{link.title}</a>
-            </li>
-          ))}
+          <ul className='md:flex-center space-x-3.5 hidden'>
+            {NAV_LINKS.map((link, idx) => (
+              <li
+                key={idx}
+                className='capitalize text-lg text-responsive hover:underline'
+              >
+                <a href={link.ref}>{link.title}</a>
+              </li>
+            ))}
 
-          <ThemeToggler />
-        </ul>
+            <ThemeToggler />
+          </ul>
 
-        <ToggleBar active={showSidenav} handleClick={toggleSidenav} />
+          <ToggleBar active={showSidenav} handleClick={toggleSidenav} />
+        </div>
       </div>
     </header>
   );

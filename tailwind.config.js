@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         primary: '#2A9D8F',
-        light: '#f4f4f9',
+        light: { DEFAULT: '#f4f4f9', body: '#edf6f9' },
         dark: '#212529',
       },
       fontFamily: {

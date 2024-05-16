@@ -13,7 +13,19 @@
   }
 
   body {
-    @apply w-full h-screen font-poppins bg-[#edf6f9] dark:bg-dark;
+    @apply w-full h-screen font-poppins bg-light-body dark:bg-dark;
+
+    &::-webkit-scrollbar-track {
+      @apply bg-light-body dark:bg-dark;
+    }
+
+    &::-webkit-scrollbar {
+      @apply bg-light-body w-2 dark:bg-dark;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply rounded-sm bg-zinc-700;
+    }
   }
 }
 
@@ -33,7 +45,7 @@
 
 @layer components {
   .theme-toggle-btn {
-    @apply rounded-md cursor-pointer dark:bg-gray-700 bg-gray-300 px-2.5 py-2.5 shadow-sm outline-none text-responsive;
+    @apply rounded-md cursor-pointer dark:bg-zinc-700 bg-gray-300 px-2.5 py-2.5 shadow-sm outline-none text-responsive;
   }
 
   .toggle-bar {
@@ -46,6 +58,18 @@
 
     &-active {
       @apply before:opacity-0 rotate-45 after:rotate-90 after:bottom-0;
+    }
+  }
+
+  .footer-link-text {
+    @apply capitalize relative;
+
+    &:hover::after {
+      @apply opacity-100 -bottom-0.5;
+    }
+
+    &::after {
+      @apply content-[''] absolute w-3/4 h-0.5 bg-primary rounded-full left-1/2 -translate-x-1/2 bottom-0 opacity-0;
     }
   }
 }
