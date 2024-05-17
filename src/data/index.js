@@ -6,91 +6,162 @@ export const socialInfo = [
   { title: 'Linkedin', icon: 'LinkedinIcon', ref: '' },
 ];
 
-export const projectList = [
+export const featuredProjectList = [
   {
     id: 1,
     name: 'xolcy template',
-    tags: ['html & css'],
-    sourceCode: 'https://github.com/sam4web/xolcy-template',
-    livePreview: 'https://sam4web.github.io/xolcy-template/',
-    imageURL: '',
+    ref: '',
+    tags: ['html', 'css', 'js'],
+    description:
+      'Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent lm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covale',
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/xolcy-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/xolcy-template/',
+      },
+    ],
   },
   {
     id: 2,
     name: 'socialated template',
-    tags: ['html & css'],
-    sourceCode: 'https://github.com/sam4web/socialated-template',
-    livePreview: 'https://sam4web.github.io/socialated-template/',
-    imageURL: '',
+    ref: '',
+    tags: ['html', 'css', 'js'],
+    description:
+      'Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent.',
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/socialated-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/socialated-template/',
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: 'xolcy template',
+    ref: '',
+    tags: ['html', 'css', 'js'],
+    description:
+      'Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent',
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/xolcy-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/xolcy-template/',
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: 'socialated template',
+    ref: '',
+    tags: ['html', 'css', 'js'],
+    description:
+      'Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent.',
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/socialated-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/socialated-template/',
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: 'xolcy template',
+    ref: '',
+    tags: ['html', 'css', 'js'],
+    description:
+      'Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent',
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/xolcy-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/xolcy-template/',
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: 'socialated template',
+    ref: '',
+    tags: ['html', 'css', 'js'],
+    description:
+      'Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent.',
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/socialated-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/socialated-template/',
+      },
+    ],
   },
 ];
 
 export const skills = [
   {
-    id: 3,
-    title: 'javascript',
-    redirect_url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    image_url: 'https://img.icons8.com/color/96/javascript--v1.png',
+    title: 'language',
+    items: [
+      'JavaScript (ES6)',
+      'TypeScript',
+      'HTML',
+      'CSS/Sass',
+      'Python',
+      'SQL',
+    ],
   },
   {
-    id: 4,
-    title: 'tailwindcss',
-    redirect_url: 'https://tailwindcss.com/',
-    image_url: 'https://img.icons8.com/color/96/tailwind_css.png',
+    title: 'frameworks',
+    items: [
+      'Ember & Glimmer',
+      'React',
+      'Jekyll',
+      'Node',
+      'D3',
+      'Wordpress',
+      'Timber',
+    ],
   },
   {
-    id: 5,
-    title: 'react',
-    redirect_url: 'https://react.dev/',
-    image_url: 'https://img.icons8.com/color/96/react-native.png',
-  },
-  {
-    id: 6,
-    title: 'vue',
-    redirect_url: 'https://vuejs.org/',
-    image_url:
-      'https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-color-tal-revivo.png      ',
-  },
-  {
-    id: 7,
-    title: 'python',
-    redirect_url: 'https://python.org',
-    image_url: 'https://img.icons8.com/color/96/python--v1.png',
-  },
-  {
-    id: 8,
-    title: 'django',
-    redirect_url: 'https://www.djangoproject.com/',
-    image_url: 'https://img.icons8.com/color/96/django.png',
-  },
-  {
-    id: 9,
-    title: 'nodejs',
-    redirect_url: 'https://nodejs.org/en/',
-    image_url: 'https://img.icons8.com/color/96/nodejs.png',
-  },
-  {
-    id: 10,
-    title: 'expressjs',
-    redirect_url: 'https://expressjs.com/',
-    image_url: 'https://img.icons8.com/color/96/express-js.png',
-  },
-  {
-    id: 11,
-    title: 'mysql',
-    redirect_url: 'https://www.mysql.com/',
-    image_url: 'https://img.icons8.com/color/96/mysql-logo.png',
-  },
-  {
-    id: 12,
-    title: 'firebase',
-    redirect_url: 'https://firebase.google.com/',
-    image_url: 'https://img.icons8.com/color/96/firebase.png',
-  },
-  {
-    id: 13,
-    title: 'git',
-    redirect_url: 'https://git-scm.com/',
-    image_url: 'https://img.icons8.com/color/96/git.png',
+    title: 'tools',
+    items: [
+      'Bash',
+      'Git & Github',
+      'Gulp & Grunt',
+      'Chrome DevTools',
+      'Postman',
+      'MongoDB',
+    ],
   },
 ];

@@ -4,10 +4,10 @@ import { createReactIcon } from '@/utils';
 const Footer = () => {
   return (
     <footer>
-      <div className='bg-dark '>
+      <div className='bg-dark dark:bg-slate-900'>
         <div className='py-4 lg:py-6 px-4 lg:px-7 max-w-screen-md lg:max-w-screen-xl mx-auto'>
           <div className='flex-between flex-col sm:flex-row space-y-3.5 sm:space-y-0'>
-            <p className='text-light text-base md:text-lg sm:text-left text-center'>
+            <p className='text-light sm:text-left text-center'>
               Designed & Developed by
               <br className='hidden sm:block' />{' '}
               <a

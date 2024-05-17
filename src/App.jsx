@@ -1,15 +1,19 @@
 import { Footer, Header } from '@/components';
-// import { Home } from '@/pages';
+import { Home } from '@/pages';
 
 const App = () => {
   return (
-    <>
+    <div className='size-full'>
       <Header />
-      <main className=' max-w-screen-sm lg:max-w-screen-xl mx-auto w-full h-screen'>
-        <div className='px-4 sm:px-7'>{/* <Home /> */}</div>
+      <main>
+        {/* <main className='wrapper'> */}
+        {/* <div className='px-4 sm:px-7 size-full'> */}
+        <Home />
+        {/* </div> */}
+        {/* </main> */}
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

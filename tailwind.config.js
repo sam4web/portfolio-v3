@@ -7,11 +7,12 @@ export default {
       colors: {
         primary: '#2A9D8F',
         light: { DEFAULT: '#f4f4f9', body: '#edf6f9' },
-        dark: '#212529',
+        dark: '#0A192F',
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        display: ['Lato', 'sans-serif'],
       },
     },
   },

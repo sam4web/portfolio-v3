@@ -28,12 +28,16 @@ import { BiMessageDetail } from 'react-icons/bi';
 import { SlLocationPin } from 'react-icons/sl';
 import { PiIntersectSquareDuotone } from 'react-icons/pi';
 import { LuPencilRuler } from 'react-icons/lu';
+import { CiFolderOn } from 'react-icons/ci';
+import { GoLinkExternal } from 'react-icons/go';
+import { FiGithub } from 'react-icons/fi';
 
 const ICONS_LIST = {
   FacebookIcon: FaFacebook,
   InstagramIcon: FaInstagram,
   LinkedinIcon: FaLinkedin,
   GithubIcon: FaGithub,
+  GithubOutlineIcon: FiGithub,
   GitlabIcon: FaGitlab,
   ChromeIcon: FiChrome,
   YoutubeIcon: FiYoutube,
@@ -56,6 +60,8 @@ const ICONS_LIST = {
   PencilIcon: LuPencilRuler,
   ArrowRight: FaArrowRight,
   Plus: FaPlus,
+  FolderIcon: CiFolderOn,
+  LinkIcon: GoLinkExternal,
 };
 
 const createReactIcon = (icon) => {
