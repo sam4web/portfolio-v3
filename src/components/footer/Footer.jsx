@@ -1,4 +1,4 @@
-import { FOOTER_LINKS } from '@/constants';
+import { socialInfo } from '@/data';
 import { createReactIcon } from '@/utils';
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
             </p>
 
             <ul className='text-light flex-center space-x-4 md:space-x-5'>
-              {FOOTER_LINKS.map((link, idx) => (
+              {socialInfo.map((link, idx) => (
                 <li key={idx}>
                   <a href={link.ref} target='_blank' className='footer-link'>
                     <span className='footer-link-text hidden md:block'>

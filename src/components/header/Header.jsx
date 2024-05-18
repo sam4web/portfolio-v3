@@ -1,5 +1,4 @@
 import { ThemeToggler, Sidenav, LogoText } from '@/components';
-import { NAV_LINKS } from '@/constants';
 import { HeaderContextProvider, useHeaderContext } from '@/context';
 import { Link } from 'react-router-dom';
 
@@ -38,11 +37,14 @@ const Header = () => {
             <LogoText />
 
             <ul className='md:flex-center space-x-4 hidden'>
-              {NAV_LINKS.map((link, idx) => (
-                <li key={idx} className='nav-link-text text-lg hover:underline'>
-                  <Link to={link.ref}>{link.title}</Link>
-                </li>
-              ))}
+              <li className='nav-link-text text-lg hover:underline'>
+                <Link to='/archive'>archive</Link>
+              </li>
+              <li className='nav-link-text text-lg hover:underline'>
+                <a href='/resume.pdf' target='_blank'>
+                  resume
+                </a>
+              </li>
 
               <ThemeToggler />
             </ul>

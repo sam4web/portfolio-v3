@@ -1,5 +1,6 @@
 import { featuredProjectList } from '@/data';
 import { createReactIcon } from '@/utils';
+import { Link } from 'react-router-dom';
 
 const Project = ({ project }) => {
   return (
@@ -77,9 +78,9 @@ const Projects = () => {
             ))}
           </div>
 
-          <a className='block text-center'>
+          <Link to={'/archive'} className='block text-center'>
             <button className='btn'>View the archive</button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

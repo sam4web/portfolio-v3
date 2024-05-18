@@ -1,9 +1,12 @@
 export const socialInfo = [
-  { title: 'Github', icon: 'GithubIcon', ref: '' },
-  { title: 'Facebook', icon: 'FacebookIcon', ref: '' },
-  { title: 'Instagram', icon: 'InstagramIcon', ref: '' },
-  { title: 'Twitter', icon: 'TwitterIcon', ref: '' },
-  { title: 'Linkedin', icon: 'LinkedinIcon', ref: '' },
+  { title: 'email', icon: 'MailIcon', ref: 'mailto:sijal.m06@gmail.com' },
+  {
+    title: 'instagram',
+    icon: 'InstagramIcon',
+    ref: 'https://instagram.com/http.sijal/',
+  },
+  { title: 'github', icon: 'GithubIcon', ref: 'https://github.com/sam4web/' },
+  { title: 'linkedin', icon: 'LinkedinIcon', ref: '' },
 ];
 
 export const featuredProjectList = [

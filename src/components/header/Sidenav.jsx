@@ -1,4 +1,3 @@
-import { NAV_LINKS } from '@/constants';
 import { LogoText, ThemeToggler } from '@/components';
 import { Link } from 'react-router-dom';
 import { useHeaderContext } from '@/context';
@@ -18,11 +17,14 @@ const Sidenav = () => {
             <LogoText />
 
             <ul className='flex flex-col space-y-2'>
-              {NAV_LINKS.map((link, idx) => (
-                <li key={idx} onClick={closeSidenav} className='nav-link-text'>
-                  <Link to={link.ref}>{link.title}</Link>
-                </li>
-              ))}
+              <li onClick={closeSidenav} className='nav-link-text'>
+                <Link to='/archive'>archieve</Link>
+              </li>
+              <li onClick={closeSidenav} className='nav-link-text'>
+                <a href='/resume.pdf' target='_blank'>
+                  resume
+                </a>
+              </li>
             </ul>
           </div>
 
