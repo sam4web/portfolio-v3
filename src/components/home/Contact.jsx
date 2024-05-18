@@ -4,7 +4,8 @@ const Contact = () => {
       <div className='wrapper'>
         <div className='section-spacing'>
           <div className='space-y-1.5 text-center'>
-            <h2 className='section-title'>Get In Touch</h2>
+            <h2 className='section-title section-title-center'>Get In Touch</h2>
+            <br />
             <p className='section-subtitle'>Contact</p>
           </div>
 

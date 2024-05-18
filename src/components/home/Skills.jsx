@@ -6,12 +6,12 @@ const Skills = () => {
       <div className='wrapper'>
         <div className='section-spacing'>
           <h2 className='section-title'>skills</h2>
-
+          <br />
           <div className='space-y-4 sm:max-w-xl lg:max-w-screen-md'>
             <div className='flex justify-between gap-5 flex-wrap'>
               {skills.map((skill, idx) => (
                 <div key={idx} className='space-y-2'>
-                  <h3 className='text-responsive text-lg lg:text-xl font-montserrat font-semibold capitalize'>
+                  <h3 className='text-lg lg:text-xl font-montserrat font-semibold capitalize text-primary'>
                     {skill.title}
                   </h3>
                   <ul>

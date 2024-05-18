@@ -5,6 +5,7 @@ const About = () => {
         <div className='section-spacing'>
           <div className='space-y-1.5'>
             <h2 className='section-title'>background</h2>
+            <br />
             <p className='section-subtitle'>Get to know me</p>
           </div>
 

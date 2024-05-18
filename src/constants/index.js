@@ -1,5 +1,5 @@
 export const NAV_LINKS = [
-  { title: 'projects', ref: '#' },
+  { title: 'archive', ref: '/archive' },
   { title: 'resume', ref: '#' },
 ];
 

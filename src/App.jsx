@@ -1,19 +1,35 @@
-import { Footer, Header } from '@/components';
-import { Home } from '@/pages';
+import { Footer, Header, PageTitle } from '@/components';
+import { Archive, Home } from '@/pages';
+import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className='size-full'>
+    <main className='w-full h-screen flex flex-col'>
       <Header />
-      <main>
-        {/* <main className='wrapper'> */}
-        {/* <div className='px-4 sm:px-7 size-full'> */}
-        <Home />
-        {/* </div> */}
-        {/* </main> */}
-      </main>
+      <div className='flex-1'>
+        <Routes>
+          <Route
+            path='/'
+            element={
+              <>
+                <PageTitle title='' />
+                <Home />
+              </>
+            }
+          />
+          <Route
+            path='/archive'
+            element={
+              <>
+                <PageTitle title='Archive' />
+                <Archive />
+              </>
+            }
+          />
+        </Routes>
+      </div>
       <Footer />
-    </div>
+    </main>
   );
 };
 

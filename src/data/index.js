@@ -10,7 +10,7 @@ export const featuredProjectList = [
   {
     id: 1,
     name: 'xolcy template',
-    ref: '',
+    ref: 'https://google.com/',
     tags: ['html', 'css', 'js'],
     description:
       'Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent lm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covale',
@@ -162,6 +162,63 @@ export const skills = [
       'Chrome DevTools',
       'Postman',
       'MongoDB',
+    ],
+  },
+];
+
+export const archiveList = [
+  {
+    id: 1,
+    year: 2020,
+    title: 'xolcy template',
+    stacks: ['html', 'css', 'js'],
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/xolcy-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/xolcy-template/',
+      },
+    ],
+  },
+  {
+    id: 2,
+    year: 2020,
+    title: 'xolcy template',
+    stacks: ['html', 'css', 'js'],
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/xolcy-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/xolcy-template/',
+      },
+    ],
+  },
+  {
+    id: 3,
+    year: 2020,
+    title: 'xolcy template',
+    stacks: ['html', 'css', 'js'],
+    links: [
+      {
+        title: 'Github',
+        icon: 'GithubOutlineIcon',
+        ref: 'https://github.com/sam4web/xolcy-template',
+      },
+      {
+        title: 'Preview',
+        icon: 'LinkIcon',
+        ref: 'https://sam4web.github.io/xolcy-template/',
+      },
     ],
   },
 ];

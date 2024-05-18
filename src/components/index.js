@@ -1,10 +1,10 @@
 import Header from './header/Header';
 import Sidenav from './header/Sidenav.jsx';
 import ThemeToggler from './header/ThemeToggler';
-import ToggleBar from './header/ToggleBar';
 import LogoText from './header/LogoText';
 
 import Emoji from './common/Emoji';
+import PageTitle from './common/PageTitle';
 
 import Hero from './home/Hero';
 import About from './home/About';
@@ -18,9 +18,9 @@ export {
   Header,
   ThemeToggler,
   Sidenav,
-  ToggleBar,
   LogoText,
   Emoji,
+  PageTitle,
   Hero,
   About,
   Projects,

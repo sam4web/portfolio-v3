@@ -1,48 +1,57 @@
-import { ThemeToggler, ToggleBar, Sidenav, LogoText } from '@/components';
+import { ThemeToggler, Sidenav, LogoText } from '@/components';
 import { NAV_LINKS } from '@/constants';
-import { useState } from 'react';
+import { HeaderContextProvider, useHeaderContext } from '@/context';
+import { Link } from 'react-router-dom';
 
-const BodyOverlay = ({ active, handleClick }) => {
+const BodyOverlay = () => {
+  const { showSidenav, closeSidenav } = useHeaderContext();
   return (
     <div
       className={`${
-        active ? 'opacity-80 block' : 'hidden'
+        showSidenav ? 'opacity-80 block' : 'hidden'
       } w-full h-screen md:hidden fixed top-0 left-0 bg-slate-800 z-5`}
-      onClick={handleClick}
+      onClick={closeSidenav}
     ></div>
   );
 };
 
-const Header = () => {
-  const [showSidenav, setShowSidenav] = useState(false);
-
-  const toggleSidenav = () => {
-    setShowSidenav((prev) => !prev);
-  };
-
+const ToggleBar = () => {
+  const { showSidenav, toggleSidenav } = useHeaderContext();
   return (
-    <header>
-      <Sidenav active={showSidenav} />
-      <BodyOverlay active={showSidenav} handleClick={toggleSidenav} />
+    <button className='md:hidden block outline-none' onClick={toggleSidenav}>
+      <div
+        className={`toggle-bar ${showSidenav ? 'toggle-bar-active' : ''}`}
+      ></div>
+    </button>
+  );
+};
 
-      <div className='bg-light dark:bg-dark shadow-sm'>
-        <div className='flex-between py-4 lg:py-6 px-4 lg:px-7 wrapper'>
-          <LogoText />
+const Header = () => {
+  return (
+    <HeaderContextProvider>
+      <header>
+        <Sidenav />
+        <BodyOverlay />
 
-          <ul className='md:flex-center space-x-4 hidden'>
-            {NAV_LINKS.map((link, idx) => (
-              <li key={idx} className='nav-link-text text-lg hover:underline'>
-                <a href={link.ref}>{link.title}</a>
-              </li>
-            ))}
+        <div className='bg-light dark:bg-dark shadow-sm'>
+          <div className='flex-between py-4 lg:py-6 px-4 lg:px-7 wrapper'>
+            <LogoText />
 
-            <ThemeToggler />
-          </ul>
+            <ul className='md:flex-center space-x-4 hidden'>
+              {NAV_LINKS.map((link, idx) => (
+                <li key={idx} className='nav-link-text text-lg hover:underline'>
+                  <Link to={link.ref}>{link.title}</Link>
+                </li>
+              ))}
 
-          <ToggleBar active={showSidenav} handleClick={toggleSidenav} />
+              <ThemeToggler />
+            </ul>
+
+            <ToggleBar />
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </HeaderContextProvider>
   );
 };
 

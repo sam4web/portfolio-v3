@@ -4,10 +4,10 @@ const Hero = () => {
   return (
     <section>
       <div className='wrapper'>
-        <div className='my-10 h-[90vh]'>
+        <div className='my-10 h-[75vh] sm:h-[90vh]'>
           <div className='h-full flex items-center'>
             <div className='space-y-3 md:space-y-6 lg:space-y-8 sm:max-w-xl lg:max-w-screen-md'>
-              <h1 className='md:pb-2 text-4xl lg:text-[64px] font-montserrat text-primary font-bold leading-tight'>
+              <h1 className='main-title'>
                 I&#8217;m Sijal Manandhar, a developer who loves to innovate.{' '}
                 <Emoji symbol='👋🏻' label='wave' />
               </h1>
