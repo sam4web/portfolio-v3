@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section>
       <div className='wrapper'>
-        <div className='my-10 h-[75vh] sm:h-[90vh]'>
+        <div className='my-10 h-[75vh] sm:h-[83vh]'>
           <div className='h-full flex items-center'>
             <div className='space-y-3 md:space-y-6 lg:space-y-8 sm:max-w-xl lg:max-w-screen-md'>
               <h1 className='main-title'>
@@ -15,9 +15,9 @@ const Hero = () => {
               <p className='about-text'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem quod voluptates praesentium magnam molestias
-                eligendi est temporibus. Est maxime labore nobis asperiores
-                veritatis aspernatur sapiente ducimus laborum nostrum ratione.
-                Mollitia!
+                eligendi est temporibus. Est <a href=''>maxime</a> labore nobis
+                asperiores veritatis aspernatur sapiente ducimus laborum nostrum
+                ratione. Mollitia!
               </p>
 
               <p className='about-text'>

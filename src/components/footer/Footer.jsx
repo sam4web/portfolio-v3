@@ -1,7 +1,8 @@
-import { socialInfo } from '@/data';
+import { useProfileContext } from '@/context';
 import { createReactIcon } from '@/utils';
 
 const Footer = () => {
+  const { socialInfo } = useProfileContext();
   return (
     <footer>
       <div className='bg-dark dark:bg-slate-900'>

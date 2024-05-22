@@ -1,4 +1,4 @@
-import { featuredProjectList } from '@/data';
+import { useProfileContext } from '@/context';
 import { createReactIcon } from '@/utils';
 import { Link } from 'react-router-dom';
 
@@ -60,6 +60,7 @@ const Project = ({ project }) => {
 };
 
 const Projects = () => {
+  const { featuredProjects } = useProfileContext();
   return (
     <section>
       <div className='wrapper'>
@@ -73,7 +74,7 @@ const Projects = () => {
           </div>
 
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
-            {featuredProjectList.map((project) => (
+            {featuredProjects.map((project) => (
               <Project key={project.id} project={project} />
             ))}
           </div>

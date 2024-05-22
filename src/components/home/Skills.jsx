@@ -1,6 +1,8 @@
-import { skills } from '@/data';
+import { useProfileContext } from '@/context';
 
 const Skills = () => {
+  const { skills } = useProfileContext();
+
   return (
     <section className='section-bg'>
       <div className='wrapper'>

@@ -5,6 +5,7 @@ import LogoText from './header/LogoText';
 
 import Emoji from './common/Emoji';
 import PageTitle from './common/PageTitle';
+import Loader from './common/Loader';
 
 import Hero from './home/Hero';
 import About from './home/About';
@@ -21,6 +22,7 @@ export {
   LogoText,
   Emoji,
   PageTitle,
+  Loader,
   Hero,
   About,
   Projects,

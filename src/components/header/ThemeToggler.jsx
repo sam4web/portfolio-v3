@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { createReactIcon } from '@/utils';
 
 const ThemeToggler = ({ includeText }) => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
   const toggleTheme = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   };

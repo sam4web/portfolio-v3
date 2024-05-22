@@ -1,7 +1,9 @@
-import { archiveList } from '@/data';
+import { useProfileContext } from '@/context';
 import { createReactIcon } from '@/utils';
 
 const Archive = () => {
+  const { projects } = useProfileContext();
+
   return (
     <section className='h-full'>
       <div className='wrapper'>
@@ -23,7 +25,7 @@ const Archive = () => {
               </tr>
             </thead>
             <tbody>
-              {archiveList.map((item) => (
+              {projects.map((item) => (
                 <tr key={item.id}>
                   <td className='table-item font-semibold text-primary'>
                     {item.year}

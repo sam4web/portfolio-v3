@@ -86,17 +86,17 @@
   }
 
   .btn {
-    @apply bg-primary hover:opacity-85 text-light shadow-sm px-6 py-3 text-base lg:text-lg rounded-sm font-montserrat font-medium cursor-pointer outline-none;
+    @apply bg-primary hover:opacity-80 text-light shadow-sm px-6 py-3 text-base lg:text-lg rounded-sm font-montserrat font-medium cursor-pointer outline-none;
   }
 
   .about-text {
     @apply text-lg lg:text-xl text-slate-600 dark:text-slate-400;
 
     & > a {
-      @apply relative;
+      @apply relative hover:after:h-full hover:text-light z-[1];
 
       &::after {
-        @apply content-[''] absolute w-[95%] h-0.5 bg-primary rounded-sm left-1/2 -translate-x-1/2 -bottom-0.5;
+        @apply content-[''] absolute w-[105%] h-0.5 bg-primary rounded-sm left-1/2 -translate-x-1/2 -bottom-0.5 -z-[1];
       }
     }
   }

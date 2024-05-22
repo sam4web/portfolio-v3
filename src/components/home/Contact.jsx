@@ -13,8 +13,8 @@ const Contact = () => {
             <p className='about-text text-center'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
               eos error maiores qui magnam, itaque laudantium quae consequuntur
-              dolores illo sint assumenda aut neque! In sapiente ullam hic
-              repellat voluptatem.
+              dolores illo sint aut neque! In sapiente ullam hic repellat
+              voluptatem.
             </p>
           </div>
 
