@@ -1,5 +1,5 @@
+import createReactIcon from '@/utils/createReactIcon';
 import { useEffect, useState } from 'react';
-import { createReactIcon } from '@/utils';
 
 const ThemeToggler = ({ includeText }) => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -23,13 +23,11 @@ const ThemeToggler = ({ includeText }) => {
         <span className='dark:block hidden'>{createReactIcon('MoonIcon')}</span>
       </div>
 
-      {includeText ? (
+      {includeText && (
         <h4 className='text-base'>
           <span className='dark:hidden inline-block'>Light</span>
           <span className='dark:inline hidden'>Dark</span> Theme
         </h4>
-      ) : (
-        ''
       )}
     </button>
   );

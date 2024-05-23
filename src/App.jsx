@@ -1,38 +1,31 @@
-import { Footer, Header, PageTitle } from '@/components';
-import { Archive, Home } from '@/pages';
-import { Route, Routes } from 'react-router-dom';
-import { ProfileContextProvider } from './context';
+import { RouterProvider } from 'react-router-dom';
+import { useProfileContext } from '@/context';
+import router from '@/routes';
+import { useEffect, useState } from 'react';
+import { Loader } from '@/components';
+import { fetchProfileData } from '@/service/api';
 
 const App = () => {
+  const { dispatch } = useProfileContext();
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetchProfileData();
+      if (data) {
+        dispatch(data);
+        setLoader(false);
+      }
+    };
+    fetchData();
+  }, [dispatch]);
+
+  if (loader) return <Loader />;
+
   return (
-    <ProfileContextProvider>
-      <main className='w-full h-screen flex flex-col'>
-        <Header />
-        <div className='flex-1'>
-          <Routes>
-            <Route
-              path='/'
-              element={
-                <>
-                  <PageTitle title='' />
-                  <Home />
-                </>
-              }
-            />
-            <Route
-              path='/archive'
-              element={
-                <>
-                  <PageTitle title='Archive' />
-                  <Archive />
-                </>
-              }
-            />
-          </Routes>
-        </div>
-        <Footer />
-      </main>
-    </ProfileContextProvider>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import { useProfileContext } from '@/context';
-import { createReactIcon } from '@/utils';
+import createReactIcon from '@/utils/createReactIcon';
 
 const Footer = () => {
   const { socialInfo } = useProfileContext();

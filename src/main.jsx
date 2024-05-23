@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import '@/styles/main.scss';
-import { BrowserRouter } from 'react-router-dom';
+import '@/assets/styles/main.scss';
+import { ProfileContextProvider } from './context/index.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <React.StrictMode>
+  <React.StrictMode>
+    <ProfileContextProvider>
       <App />
-    </React.StrictMode>
-  </BrowserRouter>
+    </ProfileContextProvider>
+  </React.StrictMode>
 );

@@ -1,5 +1,5 @@
-import { useProfileContext } from '@/context';
-import { createReactIcon } from '@/utils';
+import { useProfileContext } from '@/context/ProfileContext';
+import createReactIcon from '@/utils/createReactIcon';
 import { Link } from 'react-router-dom';
 
 const Project = ({ project }) => {
@@ -7,7 +7,7 @@ const Project = ({ project }) => {
     <a
       href={project.ref}
       target='_blank'
-      className='cursor-pointer w-full max-w-md mx-auto group hover:-translate-y-3'
+      className='cursor-pointer w-full max-w-md mx-auto group hover:-translate-y-1.5'
     >
       <div className='shadow-sm p-5 rounded-md bg-slate-200 dark:bg-slate-800 h-full flex flex-col justify-between gap-4'>
         <div className='space-y-6'>
@@ -52,7 +52,6 @@ const Project = ({ project }) => {
               )}
             </li>
           ))}
-          <li></li>
         </ul>
       </div>
     </a>
