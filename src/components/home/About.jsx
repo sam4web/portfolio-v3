@@ -11,22 +11,27 @@ const About = () => {
 
           <div className='space-y-4 sm:max-w-xl lg:max-w-screen-md'>
             <h3 className='text-xl text-responsive'>
-              A <b className='font-semibold'>web developer</b>, specializing in
-              creating websites for businesses and brands.
+              A <b className='font-semibold'>web developer</b> passionate about
+              blending technical expertise with design principles to craft
+              user-friendly websites for businesses and brands.
             </h3>
 
-            <p className='about-text'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem quod voluptates praesentium magnam molestias
-              eligendi est temporibus. Est maxime labore nobis asperiores
-              veritatis aspernatur sapiente ducimus laborum nostrum ratione.
-              Mollitia!
+            <p className='paragraph-text'>
+              As a developer, I love combining my technical skills with design
+              principles to build scalable, efficient applications that deliver
+              seamless and engaging user experiences. With 2 years of experience
+              as a web developer, I have designed and developed numerous
+              websites and web applications.
             </p>
 
-            <p className='about-text'>
-              Lorem ipsum dolor sit amet consectetur <a href='#'>adipisicing</a>{' '}
-              elit. Officiis, culpa facere! Magni fuga a nam ex expedita, autem
-              ratione cumque.
+            <p className='paragraph-text'>
+              I&apos;m actively seeking a dynamic work environment to further
+              refine my skills. My passion for continuous learning and
+              innovation drives me to adapt quickly and solve problems
+              proactively. When I&apos;m not coding, you can find me exploring
+              new tech trends, hiking, or working on personal projects. I&apos;m
+              eager to contribute my skills and enthusiasm to a forward-thinking
+              team
             </p>
           </div>
         </div>

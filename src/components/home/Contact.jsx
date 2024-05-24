@@ -1,4 +1,8 @@
+import { useProfileContext } from '@/context/ProfileContext';
+
 const Contact = () => {
+  const { social } = useProfileContext();
+
   return (
     <section>
       <div className='wrapper'>
@@ -10,16 +14,15 @@ const Contact = () => {
           </div>
 
           <div className='sm:max-w-xl mx-auto'>
-            <p className='about-text text-center'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
-              eos error maiores qui magnam, itaque laudantium quae consequuntur
-              dolores illo sint aut neque! In sapiente ullam hic repellat
-              voluptatem.
+            <p className='paragraph-text text-center'>
+              Although I&apos;m currently focused on my job search, I&apos;m
+              open to networking and new connections. Whether you have a
+              question or just want to say hello, feel free to reach out!
             </p>
           </div>
 
           <a
-            href='mailto:sijal.m06@gmail.com'
+            href={`mailto:${social.email}`}
             target='_blank'
             className='block text-center'
           >

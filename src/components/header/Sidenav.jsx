@@ -1,13 +1,13 @@
 import { LogoText, ThemeToggler } from '@/components';
 import { Link } from 'react-router-dom';
-import { useHeaderContext } from '@/context';
+import { useHeaderContext } from '@/context/HeaderContext';
 
 const Sidenav = () => {
   const { showSidenav, closeSidenav } = useHeaderContext();
 
   return (
     <nav
-      className={`md:hidden block fixed top-0 left-0 h-full z-10 ${
+      className={`md:hidden block fixed top-0 left-0 h-full z-30 ${
         !showSidenav && '-translate-x-full'
       }`}
     >

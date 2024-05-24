@@ -32,189 +32,81 @@
       "id": 1,
       "year": 2020,
       "title": "xolcy template",
-      "stacks": ["html", "css", "js"],
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/xolcy-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/xolcy-template/"
-        }
-      ]
+      "tools": ["html", "css", "js"],
+      "source": "https://github.com/sam4web/xolcy-template",
+      "preview": "https://sam4web.github.io/xolcy-template/"
     },
     {
       "id": 2,
       "year": 2020,
       "title": "xolcy template",
-      "stacks": ["html", "css", "js"],
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/xolcy-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/xolcy-template/"
-        }
-      ]
+      "tools": ["html", "css", "js"],
+      "source": "https://github.com/sam4web/xolcy-template",
+      "preview": "https://sam4web.github.io/xolcy-template/"
     },
     {
       "id": 3,
       "year": 2020,
       "title": "xolcy template",
-      "stacks": ["html", "css", "js"],
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/xolcy-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/xolcy-template/"
-        }
-      ]
+      "tools": ["html", "css", "js"],
+      "source": "https://github.com/sam4web/xolcy-template"
     }
   ],
-  "socialInfo": [
-    {
-      "title": "email",
-      "icon": "MailIcon",
-      "ref": "mailto:sijal.m06@gmail.com"
-    },
-    {
-      "title": "instagram",
-      "icon": "InstagramIcon",
-      "ref": "https://instagram.com/http.sijal/"
-    },
-    {
-      "title": "github",
-      "icon": "GithubIcon",
-      "ref": "https://github.com/sam4web/"
-    },
-    { "title": "linkedin", "icon": "LinkedinIcon", "ref": "" }
-  ],
+  "social": {
+    "github": "https://github.com/sam4web",
+    "linkedin": "",
+    "email": "sijal.m06@gmail.com",
+    "instagram": ""
+  },
+
   "featuredProjects": [
     {
       "id": 1,
       "name": "xolcy template",
-      "ref": "https://google.com/",
       "tags": ["html", "css", "js"],
       "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent lm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covale",
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/xolcy-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/xolcy-template/"
-        }
-      ]
+      "source": "https://github.com/sam4web/xolcy-template",
+      "preview": "https://sam4web.github.io/xolcy-template/"
     },
     {
       "id": 2,
-      "name": "socialated template",
-      "ref": "",
+      "name": "xolcy template",
       "tags": ["html", "css", "js"],
-      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent.",
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/socialated-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/socialated-template/"
-        }
-      ]
+      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent lm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covale",
+      "source": "https://github.com/sam4web/xolcy-template",
+      "preview": "asdf"
     },
     {
       "id": 3,
       "name": "xolcy template",
-      "ref": "",
       "tags": ["html", "css", "js"],
-      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent",
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/xolcy-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/xolcy-template/"
-        }
-      ]
+      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent lm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covale",
+      "source": "https://github.com/sam4web/xolcy-template",
+      "preview": "asdf"
     },
     {
       "id": 4,
-      "name": "socialated template",
-      "ref": "",
+      "name": "xolcy template",
       "tags": ["html", "css", "js"],
-      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent.",
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/socialated-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/socialated-template/"
-        }
-      ]
+      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent lm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covale",
+      "source": "https://github.com/sam4web/xolcy-template",
+      "preview": "asdf"
     },
     {
       "id": 5,
       "name": "xolcy template",
-      "ref": "",
       "tags": ["html", "css", "js"],
-      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent",
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/xolcy-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/xolcy-template/"
-        }
-      ]
+      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent lm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covale",
+      "source": "https://github.com/sam4web/xolcy-template",
+      "preview": "asdf"
     },
     {
       "id": 6,
-      "name": "socialated template",
-      "ref": "",
+      "name": "xolcy template",
       "tags": ["html", "css", "js"],
-      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent.",
-      "links": [
-        {
-          "title": "Github",
-          "icon": "GithubOutlineIcon",
-          "ref": "https://github.com/sam4web/socialated-template"
-        },
-        {
-          "title": "Preview",
-          "icon": "LinkIcon",
-          "ref": "https://sam4web.github.io/socialated-template/"
-        }
-      ]
+      "description": "Dynamically underwhelm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covalent lm distinctive experiences for principle-centered e-markets. Uniquely orchestrate covale",
+      "source": "https://github.com/sam4web/xolcy-template",
+      "preview": "asdf"
     }
   ]
 }

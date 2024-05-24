@@ -1,6 +1,9 @@
 import { Emoji } from '@/components';
+import { useProfileContext } from '@/context/ProfileContext';
 
 const Hero = () => {
+  const { social } = useProfileContext();
+
   return (
     <section>
       <div className='wrapper'>
@@ -12,18 +15,26 @@ const Hero = () => {
                 <Emoji symbol='👋🏻' label='wave' />
               </h1>
 
-              <p className='about-text'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem quod voluptates praesentium magnam molestias
-                eligendi est temporibus. Est <a href=''>maxime</a> labore nobis
-                asperiores veritatis aspernatur sapiente ducimus laborum nostrum
-                ratione. Mollitia!
+              <p className='paragraph-text'>
+                I focus on creating practical, data-driven solutions that fit
+                each project&apos;s needs. I handle everything from front-end
+                design to back-end functionality, ensuring tasks are done
+                efficiently and logically. My goal is to build web experiences
+                that improve lives, bring ideas to life, and make a positive
+                impact.
               </p>
 
-              <p className='about-text'>
-                Lorem ipsum dolor sit amet consectetur{' '}
-                <a href='#'>adipisicing</a> elit. Officiis, culpa facere! Magni
-                fuga a nam ex expedita, autem ratione cumque.
+              <p className='paragraph-text'>
+                I love coding, contributing to developer communities on{' '}
+                <a href={social.github} target='_blank'>
+                  Github
+                </a>{' '}
+                , sharing my workflow tips, and connecting with fellow tech
+                enthusiasts on{' '}
+                <a href={social.linkedin} target='_blank'>
+                  LinkedIn
+                </a>
+                .
               </p>
 
               <a

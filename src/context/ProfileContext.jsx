@@ -12,7 +12,7 @@ const useProfile = () => {
       featuredProjects: [],
       projects: [],
       skills: [],
-      socialInfo: [],
+      social: {},
     }
   );
 

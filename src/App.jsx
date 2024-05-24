@@ -1,9 +1,9 @@
 import { RouterProvider } from 'react-router-dom';
-import { useProfileContext } from '@/context';
-import router from '@/routes';
+import router from '@/routes/router';
 import { useEffect, useState } from 'react';
 import { Loader } from '@/components';
 import { fetchProfileData } from '@/service/api';
+import { useProfileContext } from '@/context/ProfileContext';
 
 const App = () => {
   const { dispatch } = useProfileContext();

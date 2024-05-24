@@ -1,4 +1,4 @@
-import { useHeaderContext } from '@/context';
+import { useHeaderContext } from '@/context/HeaderContext';
 import { Link } from 'react-router-dom';
 
 const LogoText = () => {

@@ -1,5 +1,6 @@
-import createReactIcon from '@/utils/createReactIcon';
 import { useEffect, useState } from 'react';
+import { BsFillMoonFill } from 'react-icons/bs';
+import { FiSun } from 'react-icons/fi';
 
 const ThemeToggler = ({ includeText }) => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -19,8 +20,12 @@ const ThemeToggler = ({ includeText }) => {
       onClick={toggleTheme}
     >
       <div className='text-xl'>
-        <span className='dark:hidden block'>{createReactIcon('SunIcon')}</span>
-        <span className='dark:block hidden'>{createReactIcon('MoonIcon')}</span>
+        <span className='dark:hidden block'>
+          <FiSun />
+        </span>
+        <span className='dark:block hidden'>
+          <BsFillMoonFill />
+        </span>
       </div>
 
       {includeText && (

@@ -1,44 +1,48 @@
 import { useProfileContext } from '@/context/ProfileContext';
-import createReactIcon from '@/utils/createReactIcon';
+import { CiFolderOn } from 'react-icons/ci';
+import { FiGithub } from 'react-icons/fi';
+import { GoLinkExternal } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 
 const Project = ({ project }) => {
   return (
-    <a
-      href={project.ref}
-      target='_blank'
-      className='cursor-pointer w-full max-w-md mx-auto group hover:-translate-y-1.5'
-    >
+    <div className='cursor-pointer w-full max-w-md mx-auto group hover:-translate-y-1.5'>
       <div className='shadow-sm p-5 rounded-md bg-slate-200 dark:bg-slate-800 h-full flex flex-col justify-between gap-4'>
         <div className='space-y-6'>
           <div className='flex-between'>
             <div>
               <span className='text-primary text-5xl'>
-                {createReactIcon('FolderIcon')}
+                <CiFolderOn />
               </span>
             </div>
 
             <ul className='flex-center gap-3'>
-              {project.links.map((link, _) => (
-                <li
-                  key={_}
-                  className='text-xl text-responsive hover:text-primary'
-                >
-                  <a href={link.ref} title={link.title}>
-                    {createReactIcon(link.icon)}
+              <li className='text-xl text-responsive hover:text-primary'>
+                <a href={project.source} target='_blank' title='source'>
+                  <FiGithub />
+                </a>
+              </li>
+              {project.preview && (
+                <li className='text-xl text-responsive hover:text-primary'>
+                  <a href={project.preview} target='_blank' title='preview'>
+                    <GoLinkExternal />
                   </a>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
-          <div className='space-y-2'>
+          <a
+            className='space-y-2 inline-block'
+            href={project.preview ? project.preview : project.source}
+            target='_blank'
+          >
             <h3 className='text-responsive text-lg lg:text-xl font-montserrat font-semibold capitalize group-hover:text-primary'>
               {project.name}
             </h3>
             <p className='text-slate-500 dark:text-slate-400'>
               {project.description}
             </p>
-          </div>
+          </a>
         </div>
 
         <ul className='flex'>
@@ -54,12 +58,13 @@ const Project = ({ project }) => {
           ))}
         </ul>
       </div>
-    </a>
+    </div>
   );
 };
 
 const Projects = () => {
   const { featuredProjects } = useProfileContext();
+
   return (
     <section>
       <div className='wrapper'>

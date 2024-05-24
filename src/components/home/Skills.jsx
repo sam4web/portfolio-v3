@@ -1,4 +1,4 @@
-import { useProfileContext } from '@/context';
+import { useProfileContext } from '@/context/ProfileContext';
 
 const Skills = () => {
   const { skills } = useProfileContext();

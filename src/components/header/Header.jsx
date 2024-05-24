@@ -1,5 +1,7 @@
 import { ThemeToggler, Sidenav, LogoText } from '@/components';
-import { HeaderContextProvider, useHeaderContext } from '@/context';
+import HeaderContextProvider, {
+  useHeaderContext,
+} from '@/context/HeaderContext';
 import { Link } from 'react-router-dom';
 
 const BodyOverlay = () => {
@@ -8,7 +10,7 @@ const BodyOverlay = () => {
     <div
       className={`${
         showSidenav ? 'opacity-80 block' : 'hidden'
-      } w-full h-screen md:hidden fixed top-0 left-0 bg-slate-800 z-5`}
+      } w-full h-screen md:hidden fixed top-0 left-0 bg-slate-800 z-20`}
       onClick={closeSidenav}
     ></div>
   );

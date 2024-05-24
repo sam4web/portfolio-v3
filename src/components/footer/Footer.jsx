@@ -1,8 +1,26 @@
-import { useProfileContext } from '@/context';
-import createReactIcon from '@/utils/createReactIcon';
+import { useProfileContext } from '@/context/ProfileContext';
+import { createElement } from 'react';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6';
+import { FiMail } from 'react-icons/fi';
+
+const SocialItem = ({ url, title, icon }) => {
+  return (
+    <li>
+      <a href={url} target='_blank' className='footer-link'>
+        <span className='underline-text capitalize hidden md:block'>
+          {title}
+        </span>
+        <span className='text-[22px] block md:hidden' title={title}>
+          {createElement(icon)}
+        </span>
+      </a>
+    </li>
+  );
+};
 
 const Footer = () => {
-  const { socialInfo } = useProfileContext();
+  const { social } = useProfileContext();
+
   return (
     <footer>
       <div className='bg-dark dark:bg-slate-900'>
@@ -21,18 +39,26 @@ const Footer = () => {
             </p>
 
             <ul className='text-light flex-center space-x-4 md:space-x-5'>
-              {socialInfo.map((link, idx) => (
-                <li key={idx}>
-                  <a href={link.ref} target='_blank' className='footer-link'>
-                    <span className='footer-link-text hidden md:block'>
-                      {link.title}
-                    </span>
-                    <span className='text-[22px] block md:hidden'>
-                      {createReactIcon(link.icon)}
-                    </span>
-                  </a>
-                </li>
-              ))}
+              <SocialItem
+                url={`mailto:${social.email}`}
+                title={'email'}
+                icon={FiMail}
+              />
+              <SocialItem
+                url={social.instagram}
+                title={'instagram'}
+                icon={FaInstagram}
+              />
+              <SocialItem
+                url={social.github}
+                title={'github'}
+                icon={FaGithub}
+              />
+              <SocialItem
+                url={social.linkedin}
+                title={'linkedin'}
+                icon={FaLinkedin}
+              />
             </ul>
           </div>
         </div>

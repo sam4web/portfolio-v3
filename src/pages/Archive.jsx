@@ -1,9 +1,11 @@
 import { PageTitle } from '@/components';
-import { useProfileContext } from '@/context';
-import createReactIcon from '@/utils/createReactIcon';
+import { useProfileContext } from '@/context/ProfileContext';
+import { FiGithub } from 'react-icons/fi';
+import { GoLinkExternal } from 'react-icons/go';
 
 const Archive = () => {
   const { projects } = useProfileContext();
+  console.log(projects);
 
   return (
     <>
@@ -13,7 +15,7 @@ const Archive = () => {
           <div className='section-spacing'>
             <div>
               <h1 className='main-title'>Archieve</h1>
-              <p className='about-text'>
+              <p className='paragraph-text'>
                 A big list of things I&#8217;ve worked on
               </p>
             </div>
@@ -24,7 +26,7 @@ const Archive = () => {
                   <th className='table-header'>Year</th>
                   <th className='table-header'>Title</th>
                   <th className='md:block hidden table-header'>Built with</th>
-                  <th className='table-header'>Link</th>
+                  <th className='table-header'>Links</th>
                 </tr>
               </thead>
               <tbody>
@@ -34,16 +36,22 @@ const Archive = () => {
                       {item.year}
                     </td>
                     <td className='table-item font-medium capitalize text-responsive'>
-                      {item.title}
+                      <a
+                        href={item.preview ? item.preview : item.source}
+                        className='cursor-pointer hover:text-primary underline-text'
+                        target='_blank'
+                      >
+                        {item.title}
+                      </a>
                     </td>
                     <td className='md:block hidden table-item'>
                       <div className='flex items-center'>
-                        {item.stacks.map((stack, _) => (
-                          <div key={_}>
+                        {item.tools.map((tool, i) => (
+                          <div key={i}>
                             <span className='text-slate-700 font-montserrat dark:text-slate-300 text-base'>
-                              {stack}
+                              {tool}
                             </span>
-                            {_ !== item.stacks.length - 1 && (
+                            {i !== item.tools.length - 1 && (
                               <span className='mx-1.5 font-semibold text-responsive'>
                                 &#183;
                               </span>
@@ -54,22 +62,28 @@ const Archive = () => {
                     </td>
                     <td className='table-item'>
                       <div className='flex items-center space-x-3'>
-                        {item.links.map((link, i) => (
+                        <a
+                          href={item.source}
+                          title='source'
+                          target='_blank'
+                          className='text-xl text-responsive hover:text-primary cursor-pointer'
+                        >
+                          <FiGithub />
+                        </a>
+                        {item.preview && (
                           <a
-                            key={i}
-                            href={link.ref}
-                            title={link.title}
+                            href={item.preview}
+                            title='preview'
                             target='_blank'
-                            className='text-xl text-responsive hover:text-primary'
+                            className='text-xl text-responsive hover:text-primary cursor-pointer'
                           >
-                            {createReactIcon(link.icon)}
+                            <GoLinkExternal />
                           </a>
-                        ))}
+                        )}
                       </div>
                     </td>
                   </tr>
                 ))}
-                <tr></tr>
               </tbody>
             </table>
           </div>
