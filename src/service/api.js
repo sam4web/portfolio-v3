@@ -1,10 +1,8 @@
 export const fetchProfileData = async () => {
-  const response = await fetch('http://localhost:5000/data.json');
-  const json = await response.json();
+  const response = await fetch('/data.json');
+  const data = await response.json();
 
   if (response.ok) {
-    return json;
+    return data;
   }
-
-  return null;
 };
