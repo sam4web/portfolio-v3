@@ -13,7 +13,7 @@ const App = () => {
     const fetchData = async () => {
       const data = await fetchProfileData();
       if (data) {
-        dispatch(data);
+        dispatch(...data);
         setLoader(false);
       }
     };

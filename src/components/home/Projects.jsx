@@ -83,9 +83,11 @@ const Projects = () => {
             ))}
           </div>
 
-          <Link to={'/archive'} className='block text-center'>
-            <button className='btn'>View the archive</button>
-          </Link>
+          <div className='flex-center'>
+            <Link to={'/archive'}>
+              <button className='btn'>View the archive</button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

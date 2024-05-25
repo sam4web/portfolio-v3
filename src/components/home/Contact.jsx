@@ -21,13 +21,11 @@ const Contact = () => {
             </p>
           </div>
 
-          <a
-            href={`mailto:${social.email}`}
-            target='_blank'
-            className='block text-center'
-          >
-            <button className='btn'>Say Hello</button>
-          </a>
+          <div className='flex-center'>
+            <a href={`mailto:${social.email}`} target='_blank'>
+              <button className='btn'>Say Hello</button>
+            </a>
+          </div>
         </div>
       </div>
     </section>

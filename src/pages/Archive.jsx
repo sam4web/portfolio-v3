@@ -5,11 +5,10 @@ import { GoLinkExternal } from 'react-icons/go';
 
 const Archive = () => {
   const { projects } = useProfileContext();
-  console.log(projects);
 
   return (
     <>
-      <PageTitle title={'archieve'} />
+      <PageTitle title={'Archieve'} />
       <section className='h-full'>
         <div className='wrapper'>
           <div className='section-spacing'>
