@@ -13,6 +13,8 @@ import Projects from './home/Projects';
 import Skills from './home/Skills';
 import Contact from './home/Contact';
 
+import TableData from './archieve/TableData';
+
 import Footer from './footer/Footer';
 
 export {
@@ -28,5 +30,6 @@ export {
   Projects,
   Skills,
   Footer,
+  TableData,
   Contact,
 };
