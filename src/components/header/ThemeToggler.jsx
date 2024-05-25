@@ -1,9 +1,13 @@
+import useThemeDetector from '@/hooks/useThemeDetector';
 import { useEffect, useState } from 'react';
 import { BsFillMoonFill } from 'react-icons/bs';
 import { FiSun } from 'react-icons/fi';
 
 const ThemeToggler = ({ includeText }) => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+  const currentTheme = useThemeDetector() ? 'dark' : 'light';
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || currentTheme
+  );
   const toggleTheme = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   };

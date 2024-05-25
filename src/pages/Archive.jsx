@@ -9,6 +9,7 @@ const Archive = () => {
   return (
     <>
       <PageTitle title={'Archieve'} />
+
       <section className='h-full'>
         <div className='wrapper'>
           <div className='section-spacing'>

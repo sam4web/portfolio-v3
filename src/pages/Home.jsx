@@ -6,17 +6,32 @@ import {
   Skills,
   PageTitle,
 } from '@/components';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Home = () => {
   return (
     <>
       <PageTitle title={''} />
+
       <section className='h-full'>
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
+        <ScrollAnimation animateIn='fadeIn'>
+          <Hero />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn='fadeIn'>
+          <About />
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn='fadeIn'>
+          <Projects />
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn='fadeIn'>
+          <Skills />
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn='fadeIn'>
+          <Contact />
+        </ScrollAnimation>
       </section>
     </>
   );

@@ -2,7 +2,6 @@ import { RouterProvider } from 'react-router-dom';
 import router from '@/routes/router';
 import { useEffect, useState } from 'react';
 import { Loader } from '@/components';
-import { fetchProfileData } from '@/service/api';
 import { useProfileContext } from '@/context/ProfileContext';
 
 const App = () => {
@@ -11,8 +10,10 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetchProfileData();
-      if (data) {
+      const response = await fetch('/data.json');
+      const data = await response.json();
+
+      if (response.ok) {
         dispatch(data);
         setLoader(false);
       }
