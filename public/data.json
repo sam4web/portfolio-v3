@@ -8,16 +8,38 @@
 
   "skills": [
     {
-      "title": "language",
-      "items": ["JavaScript (ES6)", "TypeScript", "Python", "C", "SQL"]
+      "title": "programming languages",
+      "items": [
+        "JavaScript (ES6)",
+        "TypeScript",
+        "Python",
+        "C",
+        "Golang",
+        "SQL"
+      ]
     },
     {
-      "title": "frameworks",
-      "items": ["React", "Node", "TailwindCSS", "Django", "Vue"]
+      "title": "libraries & frameworks",
+      "items": [
+        "React",
+        "Node.js",
+        "Zustand",
+        "TailwindCSS",
+        "Django",
+        "Vue",
+        "Next.js"
+      ]
     },
     {
-      "title": "tools",
-      "items": ["Bash", "Git & Github", "Chrome DevTools", "Postman", "MongoDB"]
+      "title": "tools & platform",
+      "items": [
+        "Git & Github",
+        "Vercel",
+        "Firebase",
+        "Figma",
+        "Postman",
+        "Chrome DevTools"
+      ]
     }
   ],
 
@@ -51,7 +73,7 @@
       "id": "baf16783",
       "name": "state search",
       "tags": ["react", "scss", "api"],
-      "description": "Project built with ReactJS and SCSS, utilizing data from the REST Countries API. It's designed to help users easily search and explore information about different countrie",
+      "description": "Project built with ReactJS and SCSS, utilizing data from the REST Countries API. It's designed to help users easily search and explore information about different countries.",
       "source": "https://github.com/sam4web/state-search",
       "preview": "https://sam4web.github.io/state-search/"
     },
