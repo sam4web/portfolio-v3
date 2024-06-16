@@ -4,7 +4,6 @@ import ThemeToggler from './header/ThemeToggler';
 import LogoText from './header/LogoText';
 
 import Emoji from './common/Emoji';
-import PageTitle from './common/PageTitle';
 import Loader from './common/Loader';
 
 import Hero from './home/Hero';
@@ -23,7 +22,6 @@ export {
   Sidenav,
   LogoText,
   Emoji,
-  PageTitle,
   Loader,
   Hero,
   About,

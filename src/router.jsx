@@ -1,5 +1,4 @@
-import Layout from '@/layout/Layout';
-
+import BaseLayout from '@/layout/BaseLayout';
 import Archive from '@/pages/Archive';
 import Home from '@/pages/Home';
 import NotFound from '@/pages/NotFound';
@@ -13,7 +12,7 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path='/' element={<Layout />}>
+      <Route path='/' element={<BaseLayout />}>
         <Route path='home' element={<Home />} />
         <Route path='archive' element={<Archive />} />
         <Route path='*' element={<NotFound />} />
