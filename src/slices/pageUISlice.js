@@ -1,15 +1,15 @@
 const initialState = {
   showSidenav: false,
-  showModel: false,
-  modelMessage: '',
+  showModal: false,
+  senderName: '',
 };
 
 const pageUISlice = (set) => ({
   ...initialState,
   closeSidenav: () => set({ showSidenav: false }),
   toggleSidenav: () => set((state) => ({ showSidenav: !state.showSidenav })),
-  closeModel: () => set({ showModel: false, modelMessage: '' }),
-  openModel: (msg) => set({ showModel: true, modelMessage: msg }),
+  closeModal: () => set({ showModal: false, senderName: '' }),
+  openModal: (name) => set({ showModal: true, senderName: name }),
 });
 
 export default pageUISlice;

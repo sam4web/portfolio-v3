@@ -1,20 +1,33 @@
-import { FaCheck } from 'react-icons/fa6';
+import useStore from '@/store';
 
-const Submitted = ({ message }) => {
+const Modal = () => {
+  const senderName = useStore((state) => state.senderName);
+  const closeModal = useStore((state) => state.closeModal);
+
   return (
-    <section className='mt-28 md:mt-40'>
-      <div className='max-w-screen-sm mx-auto'>
-        <div className='text-center space-y-3'>
-          <div className='main-title text-6xl md:text-9xl font-semibold flex-center'>
-            <span className='bg-primary text-light-body dark:text-dark p-3 rounded-lg'>
-              <FaCheck />
-            </span>
+    <div className='bg-opacity-40 block w-full h-screen fixed top-0 left-0 bg-slate-950 z-20'>
+      <div className='size-full flex-center'>
+        <div className='bg-light-body dark:bg-dark max-w-lg w-full p-6 rounded-lg'>
+          <div className='space-y-3 mb-8'>
+            <h3 className='text-lg lg:text-xl font-montserrat font-semibold capitalize text-primary'>
+              Message Sent!
+            </h3>
+            <p className='paragraph-text'>
+              Thank you{' '}
+              <span className='text-primary font-medium'>{senderName}</span>,
+              for your submission. We appreciate your effort and the time you
+              took to share your message.
+            </p>
           </div>
-          <p className='paragraph-text'>{message}</p>
+          <div className='text-right'>
+            <button className='btn' onClick={closeModal}>
+              Close
+            </button>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Submitted;
+export default Modal;

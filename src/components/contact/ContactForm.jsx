@@ -1,3 +1,4 @@
+import useStore from '@/store';
 import { useState } from 'react';
 
 const ContactForm = () => {
@@ -5,9 +6,16 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const openModal = useStore((state) => state.openModal);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ name, email, message });
+    openModal(name);
+
+    setName('');
+    setEmail('');
+    setMessage('');
   };
 
   return (
