@@ -1,8 +1,6 @@
-import { useProfileContext } from '@/context/ProfileContext';
+import { ContactForm, ContactInfo } from '..';
 
 const Contact = () => {
-  const { social } = useProfileContext();
-
   return (
     <section>
       <div className='wrapper'>
@@ -10,7 +8,6 @@ const Contact = () => {
           <div className='space-y-1.5 text-center'>
             <h2 className='section-title section-title-center'>Get In Touch</h2>
             <br />
-            <p className='section-subtitle'>Contact</p>
           </div>
 
           <div className='sm:max-w-xl mx-auto'>
@@ -21,10 +18,13 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className='flex-center'>
-            <a href={`mailto:${social.email}`} target='_blank'>
-              <button className='btn'>Say Hello</button>
-            </a>
+          <div className='grid lg:grid-cols-3 gap-y-5 md:gap-y-7 gap-x-4 pt-2.5'>
+            <div className='col-span-1'>
+              <ContactInfo />
+            </div>
+            <div className='col-span-2'>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </div>

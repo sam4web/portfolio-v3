@@ -14,6 +14,11 @@ import Contact from './home/Contact';
 
 import TableData from './archieve/TableData';
 
+import ContactInfo from './contact/ContactInfo';
+import ContactForm from './contact/ContactForm';
+
+import ProjectItem from './project/ProjectItem';
+
 import Footer from './footer/Footer';
 
 export {
@@ -30,4 +35,7 @@ export {
   Footer,
   TableData,
   Contact,
+  ContactInfo,
+  ContactForm,
+  ProjectItem,
 };
