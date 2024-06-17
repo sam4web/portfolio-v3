@@ -51,6 +51,14 @@
 
   "featuredProjects": [
     {
+      "id": "a71ab3d3",
+      "name": "devfetch",
+      "tags": ["react", "tailwindcss", "zustand", "daisyui", "githubapi"],
+      "description": "DevFetch is a React-based web app for searching GitHub users, viewing profiles, sorting repositories, and toggling between light and dark themes.",
+      "source": "https://github.com/sam4web/devfetch",
+      "preview": "https://projectdevfetch.netlify.app/"
+    },
+    {
       "id": "2cb9bb3d",
       "name": "quickquiz",
       "tags": ["react", "scss", "opendb-api"],
@@ -83,14 +91,7 @@
       "source": "https://github.com/sam4web/state-search",
       "preview": "https://sam4web.github.io/state-search/"
     },
-    {
-      "id": "a71ab3d3",
-      "name": "truelead template",
-      "tags": ["html", "css", "javascript"],
-      "description": "Website template for web development agencies. Built with HTML, SCSS, JavaScript, and jQuery, it's perfect for showcasing your services and portfolio with style.",
-      "source": "https://github.com/sam4web/truelead-template",
-      "preview": "https://sam4web.github.io/truelead-template/"
-    },
+
     {
       "id": "408cb861",
       "name": "DjangoCRM",
@@ -101,6 +102,14 @@
   ],
 
   "projects": [
+    {
+      "id": "af7c1fe6",
+      "year": 2024,
+      "title": "devfetch",
+      "tools": ["react", "tailwindcss", "zustand", "daisyui", "githubapi"],
+      "source": "https://github.com/sam4web/devfetch",
+      "preview": "https://projectdevfetch.netlify.app/"
+    },
     {
       "id": "9d5ae097",
       "year": 2023,
