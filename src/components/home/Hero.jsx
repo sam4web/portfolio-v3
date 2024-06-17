@@ -37,13 +37,12 @@ const Hero = () => {
                 .
               </p>
 
-              <a
-                href='mailto:sijal.m06@gmail.com'
-                target='_blank'
-                className='inline-block'
+              <button
+                className='btn'
+                onClick={() => window.scrollTo(0, document.body.scrollHeight)}
               >
-                <button className='btn'>Contact me</button>
-              </a>
+                Contact me
+              </button>
             </div>
           </div>
         </div>

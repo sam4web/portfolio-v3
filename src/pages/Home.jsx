@@ -3,7 +3,7 @@ import usePageTitle from '@/hooks/usePageTitle';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Home = () => {
-  usePageTitle('');
+  usePageTitle('Sam4Web | Sijal Manandhar');
 
   return (
     <section className='h-full'>

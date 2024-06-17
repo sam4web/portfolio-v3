@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import App from '@/App.jsx';
 import '@/assets/styles/main.scss';
 import ProfileContextProvider from '@/context/ProfileContext.jsx';
 

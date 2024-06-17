@@ -5,6 +5,7 @@ import LogoText from './header/LogoText';
 
 import Emoji from './common/Emoji';
 import Loader from './common/Loader';
+import Modal from './common/Modal';
 
 import Hero from './home/Hero';
 import About from './home/About';
@@ -38,4 +39,5 @@ export {
   ContactInfo,
   ContactForm,
   ProjectItem,
+  Modal,
 };

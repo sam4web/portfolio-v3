@@ -4,7 +4,7 @@ import usePageTitle from '@/hooks/usePageTitle';
 
 const Archive = () => {
   const { projects } = useProfileContext();
-  usePageTitle('');
+  usePageTitle('Archive | Sijal Manandhar');
 
   return (
     <section className='h-full'>

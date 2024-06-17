@@ -1,9 +1,10 @@
 import { LogoText, ThemeToggler } from '@/components';
 import { Link } from 'react-router-dom';
-import { useHeaderContext } from '@/context/HeaderContext';
+import useStore from '@/store';
 
 const Sidenav = () => {
-  const { showSidenav, closeSidenav } = useHeaderContext();
+  const showSidenav = useStore((state) => state.showSidenav);
+  const closeSidenav = useStore((state) => state.closeSidenav);
 
   return (
     <nav

@@ -1,11 +1,11 @@
 import { ThemeToggler, Sidenav, LogoText } from '@/components';
-import HeaderContextProvider, {
-  useHeaderContext,
-} from '@/context/HeaderContext';
 import { Link } from 'react-router-dom';
+import useStore from '@/store';
 
 const BodyOverlay = () => {
-  const { showSidenav, closeSidenav } = useHeaderContext();
+  const showSidenav = useStore((state) => state.showSidenav);
+  const closeSidenav = useStore((state) => state.closeSidenav);
+
   return (
     <div
       className={`${
@@ -17,7 +17,9 @@ const BodyOverlay = () => {
 };
 
 const ToggleBar = () => {
-  const { showSidenav, toggleSidenav } = useHeaderContext();
+  const showSidenav = useStore((state) => state.showSidenav);
+  const toggleSidenav = useStore((state) => state.toggleSidenav);
+
   return (
     <button className='md:hidden block outline-none' onClick={toggleSidenav}>
       <div
@@ -29,33 +31,31 @@ const ToggleBar = () => {
 
 const Header = () => {
   return (
-    <HeaderContextProvider>
-      <header>
-        <Sidenav />
-        <BodyOverlay />
+    <header>
+      <Sidenav />
+      <BodyOverlay />
 
-        <div className='bg-light dark:bg-dark shadow-sm'>
-          <div className='flex-between py-4 lg:py-6 px-4 lg:px-7 wrapper'>
-            <LogoText />
+      <div className='bg-light dark:bg-dark shadow-sm'>
+        <div className='flex-between py-4 lg:py-6 px-4 lg:px-7 wrapper'>
+          <LogoText />
 
-            <ul className='md:flex-center space-x-4 hidden'>
-              <li className='nav-link-text text-lg hover:underline'>
-                <Link to='/archive'>archive</Link>
-              </li>
-              <li className='nav-link-text text-lg hover:underline'>
-                <a href='/resume.pdf' target='_blank'>
-                  resume
-                </a>
-              </li>
+          <ul className='md:flex-center space-x-4 hidden'>
+            <li className='nav-link-text text-lg hover:underline'>
+              <Link to='/archive'>archive</Link>
+            </li>
+            <li className='nav-link-text text-lg hover:underline'>
+              <a href='/resume.pdf' target='_blank'>
+                resume
+              </a>
+            </li>
 
-              <ThemeToggler />
-            </ul>
+            <ThemeToggler />
+          </ul>
 
-            <ToggleBar />
-          </div>
+          <ToggleBar />
         </div>
-      </header>
-    </HeaderContextProvider>
+      </div>
+    </header>
   );
 };
 
