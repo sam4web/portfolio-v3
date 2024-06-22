@@ -1,9 +1,9 @@
 import { TableData } from '@/components';
-import { useProfileContext } from '@/context/ProfileContext';
 import usePageTitle from '@/hooks/usePageTitle';
+import useStore from '@/store';
 
 const Archive = () => {
-  const { projects } = useProfileContext();
+  const projects = useStore((state) => state.projects);
   usePageTitle('Archive | Sijal Manandhar');
 
   return (

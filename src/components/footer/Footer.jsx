@@ -1,4 +1,4 @@
-import { useProfileContext } from '@/context/ProfileContext';
+import useStore from '@/store';
 import { createElement } from 'react';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6';
 import { FiMail } from 'react-icons/fi';
@@ -19,7 +19,7 @@ const SocialItem = ({ url, title, icon }) => {
 };
 
 const Footer = () => {
-  const { social } = useProfileContext();
+  const social = useStore((state) => state.social);
 
   return (
     <footer>

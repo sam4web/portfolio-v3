@@ -1,7 +1,7 @@
-import { useProfileContext } from '@/context/ProfileContext';
+import useStore from '@/store';
 
 const Skills = () => {
-  const { skills } = useProfileContext();
+  const skills = useStore((state) => state.skills);
 
   return (
     <section className='section-bg'>

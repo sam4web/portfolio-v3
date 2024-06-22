@@ -1,9 +1,9 @@
-import { useProfileContext } from '@/context/ProfileContext';
 import { Link } from 'react-router-dom';
 import { ProjectItem } from '..';
+import useStore from '@/store';
 
 const Projects = () => {
-  const { featuredProjects } = useProfileContext();
+  const featuredProjects = useStore((state) => state.featuredProjects);
 
   return (
     <section>

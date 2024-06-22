@@ -2,10 +2,10 @@ import { RouterProvider } from 'react-router-dom';
 import router from '@/router';
 import { useEffect, useState } from 'react';
 import { Loader } from '@/components';
-import { useProfileContext } from '@/context/ProfileContext';
+import useStore from '@/store';
 
 const App = () => {
-  const { dispatch } = useProfileContext();
+  const setProfileData = useStore((state) => state.setProfileData);
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
@@ -14,12 +14,12 @@ const App = () => {
       const data = await response.json();
 
       if (response.ok) {
-        dispatch(data);
+        setProfileData(data);
         setLoader(false);
       }
     };
     fetchData();
-  }, [dispatch]);
+  }, [setProfileData]);
 
   if (loader) return <Loader />;
 

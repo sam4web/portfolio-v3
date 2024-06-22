@@ -1,8 +1,9 @@
-import { useProfileContext } from '@/context/ProfileContext';
+import useStore from '@/store';
 import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 
 const ContactInfo = () => {
-  const { info } = useProfileContext();
+  const info = useStore((state) => state.info);
+
   return (
     <div className='lg:space-y-6 lg:block flex flex-wrap gap-x-6 gap-y-3'>
       <div className='contact-info'>

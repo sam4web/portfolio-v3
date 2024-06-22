@@ -1,8 +1,8 @@
 import { Emoji } from '@/components';
-import { useProfileContext } from '@/context/ProfileContext';
+import useStore from '@/store';
 
 const Hero = () => {
-  const { social } = useProfileContext();
+  const social = useStore((state) => state.social);
 
   return (
     <section>
