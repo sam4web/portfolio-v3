@@ -52,6 +52,10 @@
 }
 
 @layer components {
+  .header-glossy-bg {
+    @apply isolate aspect-auto bg-light/95 dark:bg-dark/95 shadow-lg ring-1 ring-black/5 dark:ring-white/15;
+  }
+
   .main-title {
     @apply md:pb-2 text-4xl lg:text-[64px] font-montserrat text-primary font-bold leading-tight;
   }
@@ -177,7 +181,7 @@
 
     & input,
     & textarea {
-      @apply section-bg outline-none shadow-sm p-2.5 md:px-3 rounded-md focus:border-primary border-2;
+      @apply section-bg outline-none shadow-sm p-2.5 md:px-3 rounded-md focus:border-primary border-2 dark:border-slate-700;
     }
 
     & textarea {

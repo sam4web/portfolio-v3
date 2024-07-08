@@ -1,5 +1,6 @@
 import { ThemeToggler, Sidenav, LogoText } from '@/components';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import useStore from '@/store';
 
 const BodyOverlay = () => {
@@ -30,13 +31,23 @@ const ToggleBar = () => {
 };
 
 const Header = () => {
+  const closeSidenav = useStore((state) => state.closeSidenav);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      closeSidenav();
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [closeSidenav]);
+
   return (
-    <header>
+    <header className='fixed top-0 left-0 w-full z-10'>
       <Sidenav />
       <BodyOverlay />
 
-      <div className='bg-light dark:bg-dark shadow-sm'>
-        <div className='flex-between py-4 lg:py-6 px-4 lg:px-7 wrapper'>
+      <div className='header-glossy-bg shadow-sm'>
+        <div className='flex-between py-3 lg:py-5 px-4 lg:px-7 wrapper'>
           <LogoText />
 
           <ul className='md:flex-center space-x-4 hidden'>

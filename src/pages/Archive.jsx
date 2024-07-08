@@ -8,7 +8,7 @@ const Archive = () => {
 
   return (
     <section className='h-full'>
-      <div className='wrapper'>
+      <div className='wrapper mt-10'>
         <div className='section-spacing'>
           <div>
             <h1 className='main-title'>Archieve</h1>
