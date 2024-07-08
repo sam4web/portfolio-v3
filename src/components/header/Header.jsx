@@ -1,6 +1,6 @@
 import { ThemeToggler, Sidenav, LogoText } from '@/components';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import useStore from '@/store';
 
 const BodyOverlay = () => {
@@ -32,10 +32,12 @@ const ToggleBar = () => {
 
 const Header = () => {
   const closeSidenav = useStore((state) => state.closeSidenav);
+  const [scrollActive, setScrollActive] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       closeSidenav();
+      setScrollActive(window.scrollY > 120);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -47,7 +49,11 @@ const Header = () => {
       <BodyOverlay />
 
       <div className='header-glossy-bg shadow-sm'>
-        <div className='flex-between py-3 lg:py-5 px-4 lg:px-7 wrapper'>
+        <div
+          className={`${
+            scrollActive ? 'py-3' : 'lg:py-5'
+          } flex-between py-3  px-4 lg:px-7 wrapper`}
+        >
           <LogoText />
 
           <ul className='md:flex-center space-x-4 hidden'>
