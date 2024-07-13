@@ -9,20 +9,22 @@ const Skills = () => {
         <div className='section-spacing'>
           <h2 className='section-title'>skills</h2>
           <br />
-          <div className='space-y-4 sm:max-w-xl lg:max-w-screen-md'>
-            <div className='flex justify-between gap-5 flex-wrap'>
+          <div className='space-y-4'>
+            <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
               {skills.map((skill, idx) => (
-                <div key={idx} className='space-y-2'>
+                <div key={idx} className='space-y-3'>
                   <h3 className='text-lg lg:text-xl font-montserrat font-semibold capitalize text-primary'>
                     {skill.title}
                   </h3>
-                  <ul>
+                  <ul className='flex flex-wrap gap-3'>
                     {skill.items.map((item, i) => (
                       <li
                         key={i}
-                        className='text-slate-600 font-montserrat dark:text-slate-400 font-medium'
+                        className='shadow-sm p-2 rounded-md bg-slate-200 dark:bg-slate-800'
                       >
-                        {item}
+                        <span className='text-responsive font-montserrat font-medium'>
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>

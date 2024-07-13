@@ -51,7 +51,7 @@ const Header = () => {
       <div className='header-glossy-bg shadow-sm'>
         <div
           className={`${
-            scrollActive ? 'py-3' : 'lg:py-5'
+            scrollActive ? 'py-3.5' : 'lg:py-5'
           } flex-between py-3  px-4 lg:px-7 wrapper`}
         >
           <LogoText />
