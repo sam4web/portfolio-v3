@@ -22,7 +22,7 @@ const Skills = () => {
                         key={i}
                         className='shadow-sm p-2 rounded-md bg-slate-200 dark:bg-slate-800'
                       >
-                        <span className='text-responsive font-montserrat font-medium'>
+                        <span className='text-slate-700 font-montserrat dark:text-slate-300 font-medium'>
                           {item}
                         </span>
                       </li>
