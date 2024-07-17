@@ -1,0 +1,24 @@
+.nav-link-text {
+  @apply capitalize text-responsive font-montserrat font-medium;
+}
+
+.theme-toggle-btn {
+  @apply rounded-md cursor-pointer dark:bg-slate-700 bg-slate-200 px-2.5 py-2.5 shadow-sm outline-none text-responsive;
+}
+
+.toggle-bar {
+  @apply w-[17px] h-[3px] rounded-full bg-dark dark:bg-slate-300 relative before:top-[8.5px] after:bottom-[8.5px];
+
+  &::after,
+  &::before {
+    @apply content-[''] w-[26px] h-[inherit] absolute bg-dark dark:bg-slate-300 right-0 rounded-full;
+  }
+
+  &-active {
+    @apply bg-opacity-0 before:rotate-45 after:-rotate-45 after:bottom-0 before:top-0;
+  }
+}
+
+.header-glossy-bg {
+  @apply isolate aspect-auto bg-light/95 dark:bg-dark/90 shadow-lg ring-1 ring-black/5 dark:ring-white/15;
+}

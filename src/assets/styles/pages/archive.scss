@@ -1,0 +1,7 @@
+.table-header {
+  @apply font-semibold text-base md:text-lg text-slate-500 dark:text-slate-300 py-4 pe-2 md:pe-4;
+}
+
+.table-item {
+  @apply font-montserrat pe-2 md:pe-4 py-2 text-base md:text-lg;
+}

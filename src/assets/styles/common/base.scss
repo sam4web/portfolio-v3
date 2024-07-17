@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  transition: all 130ms linear;
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply w-full h-screen font-display bg-light-body dark:bg-dark;
+
+  &::-webkit-scrollbar-track {
+    @apply bg-light-body dark:bg-dark;
+  }
+
+  &::-webkit-scrollbar {
+    @apply bg-light-body w-2 dark:bg-dark;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply rounded-sm bg-slate-700;
+  }
+}

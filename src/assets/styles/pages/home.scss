@@ -1,0 +1,42 @@
+.section-title {
+  @apply capitalize text-2xl lg:text-4xl font-semibold text-responsive relative inline-block;
+
+  &::after {
+    @apply absolute content-[''] w-3 h-[2px] bg-primary z-[5] animate-ping bottom-1 -right-7;
+  }
+
+  &-center::after {
+    @apply hidden;
+  }
+}
+
+.section-subtitle {
+  @apply inline-block text-primary text-lg;
+}
+
+.section-bg {
+  @apply bg-light dark:bg-slate-900;
+}
+
+.contact-info {
+  @apply flex items-center space-x-3;
+
+  span {
+    @apply text-primary text-[27px] bg-slate-200 dark:bg-slate-800 flex-center px-3 py-3.5 rounded-md;
+  }
+
+  div {
+    h4 {
+      @apply text-responsive text-lg font-montserrat font-medium capitalize;
+    }
+
+    p,
+    a {
+      @apply text-lg text-slate-500 dark:text-slate-400 font-medium;
+    }
+
+    a {
+      @apply hover:underline;
+    }
+  }
+}
