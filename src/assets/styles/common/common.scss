@@ -1,48 +1,50 @@
-.btn {
-  @apply bg-primary hover:opacity-80 text-light shadow-sm px-6 py-3 text-base lg:text-lg rounded-sm font-montserrat font-medium cursor-pointer outline-none;
+@layer components {
+  .btn {
+    @apply bg-primary hover:opacity-80 text-light shadow-sm px-6 py-3 text-base lg:text-lg rounded-sm font-montserrat font-medium cursor-pointer outline-none;
 
-  &:disabled {
-    @apply opacity-45 cursor-not-allowed;
-  }
-}
-
-.main-title {
-  @apply md:pb-2 text-4xl lg:text-[64px] font-montserrat text-primary font-bold leading-tight;
-}
-
-.paragraph-text {
-  @apply text-lg lg:text-xl text-slate-600 dark:text-slate-400;
-
-  & > a {
-    @apply relative hover:after:h-full hover:text-light z-[1];
-
-    &::after {
-      @apply content-[''] absolute w-[105%] h-0.5 bg-primary rounded-sm left-1/2 -translate-x-1/2 -bottom-0.5 -z-[1];
+    &:disabled {
+      @apply opacity-45 cursor-not-allowed;
     }
   }
-}
 
-.underline-text {
-  @apply relative;
-
-  &:hover::after {
-    @apply opacity-100 -bottom-0.5;
+  .main-title {
+    @apply md:pb-2 text-4xl lg:text-[64px] font-montserrat text-primary font-bold leading-tight;
   }
 
-  &::after {
-    @apply content-[''] absolute w-[97%] h-[1px] bg-primary rounded-full left-1/2 -translate-x-1/2 bottom-0 opacity-0;
+  .paragraph-text {
+    @apply text-lg lg:text-xl text-slate-600 dark:text-slate-400;
+
+    & > a {
+      @apply relative hover:after:h-full hover:text-light z-[1];
+
+      &::after {
+        @apply content-[''] absolute w-[105%] h-0.5 bg-primary rounded-sm left-1/2 -translate-x-1/2 -bottom-0.5 -z-[1];
+      }
+    }
   }
-}
 
-.input-field {
-  @apply w-full flex flex-col text-slate-600 font-montserrat dark:text-slate-400 font-medium space-y-0.5 md:space-y-1;
+  .underline-text {
+    @apply relative;
 
-  & input,
-  & textarea {
-    @apply section-bg outline-none shadow-sm p-2.5 md:px-3 rounded-md focus:border-primary border-2 dark:border-slate-700;
+    &:hover::after {
+      @apply opacity-100 -bottom-0.5;
+    }
+
+    &::after {
+      @apply content-[''] absolute w-[97%] h-[1px] bg-primary rounded-full left-1/2 -translate-x-1/2 bottom-0 opacity-0;
+    }
   }
 
-  & textarea {
-    @apply resize-y h-48;
+  .input-field {
+    @apply w-full flex flex-col text-slate-600 font-montserrat dark:text-slate-400 font-medium space-y-0.5 md:space-y-1;
+
+    & input,
+    & textarea {
+      @apply section-bg outline-none shadow-sm p-2.5 md:px-3 rounded-md focus:border-primary border-2 dark:border-slate-700;
+    }
+
+    & textarea {
+      @apply resize-y h-48;
+    }
   }
 }
