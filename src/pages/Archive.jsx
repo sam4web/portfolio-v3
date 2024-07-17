@@ -3,8 +3,9 @@ import usePageTitle from '@/hooks/usePageTitle';
 import useStore from '@/store';
 
 const Archive = () => {
-  const projects = useStore((state) => state.projects);
   usePageTitle('Archive | Sijal Manandhar');
+
+  const projects = useStore((state) => state.projects);
 
   return (
     <section className='h-full'>

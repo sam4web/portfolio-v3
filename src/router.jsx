@@ -1,7 +1,5 @@
 import BaseLayout from '@/layout/BaseLayout';
-import Archive from '@/pages/Archive';
-import Home from '@/pages/Home';
-import NotFound from '@/pages/NotFound';
+import { Archive, Home, Resume, NotFound } from '@/pages';
 
 import {
   createBrowserRouter,
@@ -15,6 +13,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<BaseLayout />}>
         <Route path='home' element={<Home />} />
         <Route path='archive' element={<Archive />} />
+        <Route path='resume' element={<Resume />} />
         <Route path='*' element={<NotFound />} />
       </Route>
     </>

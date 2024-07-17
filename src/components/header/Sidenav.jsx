@@ -19,12 +19,13 @@ const Sidenav = () => {
 
             <ul className='flex flex-col space-y-2'>
               <li onClick={closeSidenav} className='nav-link-text'>
+                <Link to='/home'>home</Link>
+              </li>
+              <li onClick={closeSidenav} className='nav-link-text'>
                 <Link to='/archive'>archieve</Link>
               </li>
               <li onClick={closeSidenav} className='nav-link-text'>
-                <a href='/resume.pdf' target='_blank'>
-                  resume
-                </a>
+                <Link to='/resume'>resume</Link>
               </li>
             </ul>
           </div>

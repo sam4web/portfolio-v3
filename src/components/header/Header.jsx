@@ -61,9 +61,7 @@ const Header = () => {
               <Link to='/archive'>archive</Link>
             </li>
             <li className='nav-link-text text-lg hover:underline'>
-              <a href='/resume.pdf' target='_blank'>
-                resume
-              </a>
+              <Link to='/resume'>resume</Link>
             </li>
 
             <ThemeToggler />

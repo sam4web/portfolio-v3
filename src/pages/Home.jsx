@@ -4,17 +4,15 @@ import useStore from '@/store';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Home = () => {
-  const showModal = useStore((state) => state.showModal);
-
   usePageTitle('Sam4Web | Sijal Manandhar');
+
+  const showModal = useStore((state) => state.showModal);
 
   return (
     <section className='h-full'>
       {showModal ? <Modal /> : ''}
 
-      <ScrollAnimation animateIn='fadeIn'>
-        <Hero />
-      </ScrollAnimation>
+      <Hero />
 
       <ScrollAnimation animateIn='fadeIn'>
         <About />

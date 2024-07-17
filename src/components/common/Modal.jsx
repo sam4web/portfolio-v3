@@ -17,7 +17,7 @@ const Modal = () => {
 
   return (
     <div
-      className='bg-opacity-40 block w-full h-screen fixed top-0 left-0 bg-slate-950 z-20'
+      className='bg-opacity-50 block w-full h-screen fixed top-0 left-0 bg-slate-950 z-20'
       onClick={closeModal}
     >
       <div className='size-full flex-center px-3.5'>

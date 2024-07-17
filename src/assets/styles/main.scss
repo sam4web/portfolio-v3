@@ -95,6 +95,10 @@
 
   .btn {
     @apply bg-primary hover:opacity-80 text-light shadow-sm px-6 py-3 text-base lg:text-lg rounded-sm font-montserrat font-medium cursor-pointer outline-none;
+
+    &:disabled {
+      @apply opacity-45 cursor-not-allowed;
+    }
   }
 
   .paragraph-text {
