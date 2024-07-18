@@ -9,16 +9,16 @@ import Modal from './common/Modal';
 
 import Hero from './home/Hero';
 import About from './home/About';
-import Projects from './home/Projects';
+import Projects from './home/project/Projects';
 import Skills from './home/Skills';
-import Contact from './home/Contact';
+import Contact from './home/contact/Contact';
 
 import TableData from './archieve/TableData';
 
-import ContactInfo from './contact/ContactInfo';
-import ContactForm from './contact/ContactForm';
+import ContactInfo from './home/contact/ContactInfo';
+import ContactForm from './home/contact/ContactForm';
 
-import ProjectItem from './project/ProjectItem';
+import ProjectItem from './home/project/ProjectItem';
 
 import Footer from './footer/Footer';
 

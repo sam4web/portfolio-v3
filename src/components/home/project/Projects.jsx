@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ProjectItem } from '..';
 import useStore from '@/store';
+import { ProjectItem } from '@/components';
 
 const Projects = () => {
   const featuredProjects = useStore((state) => state.featuredProjects);

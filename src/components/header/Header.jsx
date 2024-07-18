@@ -56,7 +56,7 @@ const Header = () => {
         >
           <LogoText />
 
-          <ul className='md:flex-center space-x-4 hidden'>
+          <ul className='md:flex-center space-x-5 hidden'>
             <li className='nav-link-text text-lg hover:underline'>
               <Link to='/archive'>archive</Link>
             </li>
