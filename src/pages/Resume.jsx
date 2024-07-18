@@ -39,7 +39,7 @@ const Resume = () => {
             <FiZoomOut />
           </button>
 
-          <a className='btn p-2 text-2xl' href={resume} download='resume'>
+          <a className='btn p-2 text-2xl' href={resume} download='resume.pdf'>
             <FiDownload />
           </a>
         </div>
