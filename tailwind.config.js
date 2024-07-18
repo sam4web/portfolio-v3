@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#2A9D8F',
-        light: { DEFAULT: '#f4f4f9', body: '#edf6f9' },
+        primary: '#7161ef',
+        light: { DEFAULT: '#eff7f6', body: '#edf2fb' },
         dark: '#0A192F',
       },
       fontFamily: {

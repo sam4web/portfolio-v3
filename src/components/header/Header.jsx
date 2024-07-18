@@ -10,8 +10,8 @@ const BodyOverlay = () => {
   return (
     <div
       className={`${
-        showSidenav ? 'opacity-80 block' : 'hidden'
-      } w-full h-screen md:hidden fixed top-0 left-0 bg-slate-800 z-20`}
+        showSidenav ? 'opacity-70 block' : 'hidden'
+      } w-full h-screen md:hidden fixed top-0 left-0 bg-slate-950 z-20`}
       onClick={closeSidenav}
     ></div>
   );

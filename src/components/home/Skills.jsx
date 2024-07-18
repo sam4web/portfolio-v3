@@ -20,7 +20,7 @@ const Skills = () => {
                     {skill.items.map((item, i) => (
                       <li
                         key={i}
-                        className='shadow-sm p-2 rounded-md bg-slate-200 dark:bg-slate-800'
+                        className='shadow-sm p-2 rounded-md bg-slate-200 dark:bg-slate-800 select-none'
                       >
                         <span className='text-slate-700 font-montserrat dark:text-slate-300 font-medium'>
                           {item}

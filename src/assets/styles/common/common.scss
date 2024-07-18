@@ -40,7 +40,7 @@
 
     & input,
     & textarea {
-      @apply section-bg outline-none shadow-sm p-2.5 md:px-3 rounded-md focus:border-primary border-2 dark:border-slate-700;
+      @apply section-bg outline-none shadow-sm p-2.5 md:px-3 rounded-md focus:border-primary border-2 dark:border-slate-700 bg-light dark:bg-dark;
     }
 
     & textarea {
