@@ -46,7 +46,11 @@ const Resume = () => {
       )}
       <div className='flex-center'>
         <div className='overflow-scroll rounded-md'>
-          <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
+          <Document
+            file={resume}
+            onLoadSuccess={onDocumentLoadSuccess}
+            className='text-responsive'
+          >
             <Page
               pageNumber={1}
               renderTextLayer={false}
