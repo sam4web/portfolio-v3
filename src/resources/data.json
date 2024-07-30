@@ -1,55 +1,46 @@
 {
   "social": {
     "github": "https://github.com/sam4web",
-    "linkedin": "",
+    "linkedin": "https://www.linkedin.com/in/sijal-manandhar-9914b6247/",
     "email": "sijal.m06@gmail.com",
     "instagram": "https://instagram.com/http.sijal/"
   },
-
   "info": {
     "email": "sijal.m06@gmail.com",
     "phone": "+977 9860334526",
     "address": "Kalanki, Kathmandu, Nepal."
   },
-
   "skills": [
     {
       "title": "programming languages",
-      "items": [
-        "JavaScript (ES6)",
-        "TypeScript",
-        "Python",
-        "C",
-        "Golang",
-        "SQL"
-      ]
+      "items": ["JavaScript (ES6)", "TypeScript", "Python", "C", "SQL"]
     },
     {
       "title": "libraries & frameworks",
-      "items": [
-        "React",
-        "Node.js",
-        "Zustand",
-        "TailwindCSS",
-        "Django",
-        "Vue",
-        "Next.js"
-      ]
+      "items": ["React", "Node.js", "Zustand", "TailwindCSS", "Django", "Vue"]
     },
     {
       "title": "tools & platform",
-      "items": [
-        "Git & Github",
-        "Vercel",
-        "Firebase",
-        "Figma",
-        "Postman",
-        "Chrome DevTools"
-      ]
+      "items": ["Git & Github", "Vercel", "Firebase", "Figma", "Postman"]
     }
   ],
-
   "featuredProjects": [
+    {
+      "id": "6f6d22ef",
+      "name": "docket",
+      "tags": [
+        "node.js",
+        "react",
+        "tailwindcss",
+        "react-router-dom",
+        "zustand",
+        "mongodb",
+        "express"
+      ],
+      "description": "A web app for managing notes with a seamless and intuitive user experience. Key features include user authentication, creating, viewing, updating, and deleting notes.",
+      "source": "https://github.com/sam4web/docket-frontend",
+      "preview": "https://projectdocket.netlify.app/"
+    },
     {
       "id": "a71ab3d3",
       "name": "devfetch",
@@ -74,7 +65,6 @@
       "source": "https://github.com/sam4web/xolcy-template",
       "preview": "https://sam4web.github.io/xolcy-template/"
     },
-
     {
       "id": "635dad15",
       "name": "socialated template",
@@ -90,18 +80,25 @@
       "description": "Project built with ReactJS and SCSS, utilizing data from the REST Countries API. It's designed to help users easily search and explore information about different countries.",
       "source": "https://github.com/sam4web/state-search",
       "preview": "https://sam4web.github.io/state-search/"
-    },
-
-    {
-      "id": "408cb861",
-      "name": "DjangoCRM",
-      "tags": ["django", "html", "tailwindcss", "javascript"],
-      "description": "A clean CRM app with CRUD operations and authentication, powered by Django and TailwindCSS.",
-      "source": "https://github.com/sam4web/DjangoCRM"
     }
   ],
-
   "projects": [
+    {
+      "id": "6f6d22ef",
+      "year": 2024,
+      "title": "docket",
+      "tools": [
+        "node.js",
+        "react",
+        "tailwindcss",
+        "react-router-dom",
+        "zustand",
+        "mongodb",
+        "express"
+      ],
+      "source": "https://github.com/sam4web/docket-frontend",
+      "preview": "https://projectdocket.netlify.app/"
+    },
     {
       "id": "af7c1fe6",
       "year": 2024,
