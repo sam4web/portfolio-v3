@@ -17,7 +17,7 @@
     },
     {
       "title": "libraries & frameworks",
-      "items": ["React", "Node.js", "Zustand", "TailwindCSS", "Django", "Vue"]
+      "items": ["React", "Node.js", "Redux", "TailwindCSS", "Django", "Vue.js"]
     },
     {
       "title": "tools & platform",
@@ -33,7 +33,7 @@
         "react",
         "tailwindcss",
         "react-router-dom",
-        "zustand",
+        "redux",
         "mongodb",
         "express"
       ],
@@ -92,7 +92,7 @@
         "react",
         "tailwindcss",
         "react-router-dom",
-        "zustand",
+        "redux",
         "mongodb",
         "express"
       ],
@@ -124,11 +124,32 @@
       "preview": "https://sam4web.github.io/newsletter-signup-form/"
     },
     {
-      "id": "f54ff736",
+      "id": "f54gdf736",
+      "year": 2024,
+      "title": "Shopswift [Django]",
+      "tools": ["python", "django", "tailwindcss", "alpinejs"],
+      "source": "https://github.com/sam4web/shopswift-django"
+    },
+    {
+      "id": "f54gdf736",
       "year": 2024,
       "title": "book library system",
       "tools": ["python"],
       "source": "https://github.com/sam4web/book-library-system"
+    },
+    {
+      "id": "g54gddfe6",
+      "year": 2024,
+      "title": "pong game",
+      "tools": ["python", "pygame"],
+      "source": "https://github.com/sam4web/pong-game"
+    },
+    {
+      "id": "f54ff736",
+      "year": 2024,
+      "title": "space shooter",
+      "tools": ["python", "pygame"],
+      "source": "https://github.com/sam4web/space-shooter"
     },
     {
       "id": "a01c831e",
@@ -159,13 +180,6 @@
       "tools": ["html", "scss", "javascript", "jquery"],
       "source": "https://github.com/sam4web/truelead-template",
       "preview": "https://sam4web.github.io/truelead-template/"
-    },
-    {
-      "id": "1b3da41f",
-      "year": 2023,
-      "title": "react chat",
-      "tools": ["react", "scss"],
-      "source": "https://github.com/sam4web/react-chat"
     },
     {
       "id": "babfcd6e",
