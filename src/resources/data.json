@@ -26,6 +26,21 @@
   ],
   "featuredProjects": [
     {
+      "id": "6f6d35ff",
+      "name": "ShopSwift",
+      "tags": [
+        "node.js",
+        "react",
+        "tailwindcss",
+        "react-router-dom",
+        "redux",
+        "mongodb",
+        "express"
+      ],
+      "description": "A full-stack MERN e-commerce app with authentication, product browsing, shopping cart, and order management..",
+      "source": "https://github.com/sam4web/shopswift-frontend",
+      "preview": "https://projectshopswift.netlify.app/"
+    },    {
       "id": "6f6d22ef",
       "name": "docket",
       "tags": [
@@ -51,7 +66,7 @@
     },
     {
       "id": "2cb9bb3d",
-      "name": "quickquiz",
+      "name": "QuickQuiz",
       "tags": ["react", "scss", "opendb-api"],
       "description": "Quiz game built using ReactJS and SCSS, featuring questions from the Open Trivia Database (opentdb.com) API. Test your knowledge and enjoy an engaging, interactive experience!",
       "source": "https://github.com/sam4web/quickquiz",
@@ -72,17 +87,25 @@
       "description": "Socialated is a straightforward web project created with HTML, SCSS, JavaScript, and jQuery. It's designed to be easy to use and perfect for showcasing basic web development skills.",
       "source": "https://github.com/sam4web/socialated-template",
       "preview": "https://sam4web.github.io/socialated-template/"
-    },
-    {
-      "id": "baf16783",
-      "name": "state search",
-      "tags": ["react", "scss", "api"],
-      "description": "Project built with ReactJS and SCSS, utilizing data from the REST Countries API. It's designed to help users easily search and explore information about different countries.",
-      "source": "https://github.com/sam4web/state-search",
-      "preview": "https://sam4web.github.io/state-search/"
     }
   ],
   "projects": [
+    {
+      "id": "6f3d53ef",
+      "year": 2024,
+      "title": "ShopSwift [MERN]",
+      "tools": [
+        "node.js",
+        "react",
+        "tailwindcss",
+        "react-router-dom",
+        "redux",
+        "mongodb",
+        "express"
+      ],
+      "source": "https://github.com/sam4web/shopswift-frontend",
+      "preview": "https://projectshopswift.netlify.app/"
+    },
     {
       "id": "6f6d22ef",
       "year": 2024,

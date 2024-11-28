@@ -1,10 +1,29 @@
-# I’m Sijal Manandhar, a developer who loves to innovate. 👋🏻
+# Personal Portfolio v3 
 
-I focus on creating practical, data-driven solutions that fit each project's needs. I handle everything from front-end design to back-end functionality, ensuring tasks are done efficiently and logically. My goal is to build web experiences that improve lives, bring ideas to life, and make a positive impact.
+## Overview
 
-As a developer, I love combining my technical skills with design principles to build scalable, efficient applications that deliver seamless and engaging user experiences. With 2 years of experience as a web developer, I have designed and developed numerous websites and web applications.
+This is the third iteration of my personal portfolio website, featuring a sleek design, modern technologies, and enhanced user experience. Built with React and Tailwind CSS, it provides an optimized and responsive way to showcase my skills, projects, and achievements.
 
-I'm actively seeking a dynamic work environment to further refine my skills. My passion for continuous learning and innovation drives me to adapt quickly and solve problems proactively. When I'm not coding, you can find me exploring new tech trends, hiking, or working on personal projects. I'm eager to contribute my skills and enthusiasm to a forward-thinking team
+## Features
 
-Designed & Developed by
-[Sam4Web](https://github.com/sam4web) 2024.
+- **Modern Design:** A clean and responsive layout powered by Tailwind CSS.
+- **Interactive Projects Section:** Highlighting key projects with descriptions and external links.
+- **About Me:** A detailed overview of my skills, expertise, and background.
+- **Resume Download:** Easy access to my up-to-date resume in PDF format.
+- **Contact Section:** Simplified ways to reach out to me via email or social platforms.
+
+## Technologies Used
+
+- **Frontend:** [React.js](https://react.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Deployment:** GitHub Pages
+
+## Deployment
+
+The website is hosted on GitHub Pages. Updates to the `main` branch trigger an automatic deployment.
+
+## Contact
+
+Feel free to connect with me for collaborations or inquiries:
+- **GitHub:** [@sam4web](https://github.com/sam4web/)
+- **Email:** [sijal.m06@gmail.com](mailto:sijal.m06@gmail.com)
