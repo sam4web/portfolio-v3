@@ -2,7 +2,7 @@ import { useState } from "react";
 import usePageTitle from "@/hooks/usePageTitle";
 import { Document, Page, pdfjs } from "react-pdf";
 import { FiDownload, FiZoomIn, FiZoomOut } from "react-icons/fi";
-import resume from "@/resources/resume2024.pdf";
+import resume from "/resume2024.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",

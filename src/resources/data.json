@@ -2,8 +2,7 @@
   "social": {
     "github": "https://github.com/sam4web",
     "linkedin": "https://www.linkedin.com/in/sijal-manandhar-9914b6247/",
-    "email": "sijal.m06@gmail.com",
-    "instagram": "https://instagram.com/http.sijal/"
+    "email": "sijal.m06@gmail.com"
   },
   "info": {
     "email": "sijal.m06@gmail.com",
@@ -40,7 +39,8 @@
       "description": "A full-stack MERN e-commerce app with authentication, product browsing, shopping cart, and order management.",
       "source": "https://github.com/sam4web/shopswift-frontend",
       "preview": "https://projectshopswift.netlify.app/"
-    },    {
+    },
+    {
       "id": "6f6d22ef",
       "name": "docket",
       "tags": [
