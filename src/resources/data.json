@@ -37,7 +37,7 @@
         "express"
       ],
       "description": "A full-stack MERN e-commerce app with authentication, product browsing, shopping cart, and order management.",
-      "source": "https://github.com/sam4web/shopswift-frontend",
+      "source": "https://github.com/sam4web/shopswift",
       "preview": "https://projectshopswift.netlify.app/"
     },
     {
@@ -53,7 +53,7 @@
         "express"
       ],
       "description": "A web app for managing notes with a seamless and intuitive user experience. Key features include user authentication, creating, viewing, updating, and deleting notes.",
-      "source": "https://github.com/sam4web/docket-frontend",
+      "source": "https://github.com/sam4web/docket",
       "preview": "https://projectdocket.netlify.app/"
     },
     {
