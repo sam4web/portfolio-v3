@@ -37,8 +37,8 @@
         "express"
       ],
       "description": "A full-stack MERN e-commerce app with authentication, product browsing, shopping cart, and order management.",
-      "source": "https://github.com/sam4web/shopswift",
-      "preview": "https://projectshopswift.netlify.app/"
+      "source": "https://github.com/sam4web/project-shopswift",
+      "preview": "https://project-shopswift.netlify.app/"
     },
     {
       "id": "6f6d22ef",
@@ -53,8 +53,8 @@
         "express"
       ],
       "description": "A web app for managing notes with a seamless and intuitive user experience. Key features include user authentication, creating, viewing, updating, and deleting notes.",
-      "source": "https://github.com/sam4web/docket",
-      "preview": "https://projectdocket.netlify.app/"
+      "source": "https://github.com/sam4web/project-docket",
+      "preview": "https://project-docket.netlify.app/"
     },
     {
       "id": "a71ab3d3",
@@ -93,7 +93,7 @@
     {
       "id": "6f3d53ef",
       "year": 2024,
-      "title": "ShopSwift [MERN]",
+      "title": "ShopSwift",
       "tools": [
         "node.js",
         "react",
@@ -103,8 +103,8 @@
         "mongodb",
         "express"
       ],
-      "source": "https://github.com/sam4web/shopswift-frontend",
-      "preview": "https://projectshopswift.netlify.app/"
+      "source": "https://github.com/sam4web/project-shopswift",
+      "preview": "https://project-shopswift.netlify.app/"
     },
     {
       "id": "6f6d22ef",
@@ -119,8 +119,8 @@
         "mongodb",
         "express"
       ],
-      "source": "https://github.com/sam4web/docket-frontend",
-      "preview": "https://projectdocket.netlify.app/"
+      "source": "https://github.com/sam4web/project-docket",
+      "preview": "https://project-docket.netlify.app/"
     },
     {
       "id": "af7c1fe6",
