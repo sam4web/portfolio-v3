@@ -2,7 +2,7 @@ import { Header, Footer } from "@/components";
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
-const Layout = () => {
+const BaseLayout = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default BaseLayout;

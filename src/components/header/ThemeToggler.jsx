@@ -1,41 +1,30 @@
-import useThemeDetector from '@/hooks/useThemeDetector';
-import { useEffect, useState } from 'react';
-import { BsFillMoonFill } from 'react-icons/bs';
-import { FiSun } from 'react-icons/fi';
+import { useTheme } from "@/context/ThemeContext";
+import { BsFillMoonFill } from "react-icons/bs";
+import { FiSun } from "react-icons/fi";
 
 const ThemeToggler = ({ includeText }) => {
-  const currentTheme = useThemeDetector() ? 'dark' : 'light';
-  const [theme, setTheme] = useState(
-    localStorage.getItem('theme') || currentTheme
-  );
-  const toggleTheme = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light');
-  };
-  useEffect(() => {
-    localStorage.setItem('theme', theme);
-    document.body.className = theme;
-  }, [theme]);
+  const { toggleTheme } = useTheme();
 
   return (
     <button
       className={`theme-toggle-btn ${
-        includeText ? 'flex-center space-x-2' : ''
+        includeText ? "flex-center space-x-2" : ""
       }`}
-      onClick={toggleTheme}
+      onClick={() => toggleTheme()}
     >
-      <div className='text-xl'>
-        <span className='dark:hidden block'>
+      <div className="text-xl">
+        <span className="dark:hidden block">
           <FiSun />
         </span>
-        <span className='dark:block hidden'>
+        <span className="dark:block hidden">
           <BsFillMoonFill />
         </span>
       </div>
 
       {includeText && (
-        <h4 className='text-base'>
-          <span className='dark:hidden inline-block'>Light</span>
-          <span className='dark:inline hidden'>Dark</span> Theme
+        <h4 className="text-base">
+          <span className="dark:hidden inline-block">Light</span>
+          <span className="dark:inline hidden">Dark</span> Theme
         </h4>
       )}
     </button>

@@ -1,36 +1,51 @@
-import useStore from '@/store';
+import { useTheme } from "@/context/ThemeContext";
 
 const Skills = () => {
-  const skills = useStore((state) => state.skills);
+  const { theme } = useTheme();
+
+  const skills = [
+    { title: "TypeScript", icon: "ts" },
+    { title: "Python", icon: "python" },
+    { title: "Django", icon: "django" },
+    { title: "Flask", icon: "flask" },
+    { title: "Node", icon: "nodejs" },
+    { title: "React", icon: "react" },
+    { title: "Redux", icon: "redux" },
+    { title: "TailwindCSS", icon: "tailwindcss" },
+    { title: "PostgreSQL", icon: "postgresql" },
+    { title: "MongoDB", icon: "mongo" },
+    { title: "Git", icon: "git" },
+    { title: "Vercel", icon: "vercel" },
+    { title: "Firebase", icon: "firebase" },
+    { title: "Postman", icon: "postman" },
+    { title: "Figma", icon: "figma" },
+  ];
 
   return (
-    <section className='section-bg'>
-      <div className='wrapper'>
-        <div className='section-spacing'>
-          <h2 className='section-title'>skills</h2>
-          <br />
-          <div className='space-y-4'>
-            <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
-              {skills.map((skill, idx) => (
-                <div key={idx} className='space-y-3'>
-                  <h3 className='text-lg lg:text-xl font-montserrat font-semibold capitalize text-primary'>
-                    {skill.title}
-                  </h3>
-                  <ul className='flex flex-wrap gap-3'>
-                    {skill.items.map((item, i) => (
-                      <li
-                        key={i}
-                        className='shadow-sm p-2 rounded-md bg-slate-200 dark:bg-slate-800 select-none'
-                      >
-                        <span className='text-slate-700 font-montserrat dark:text-slate-300 font-medium'>
-                          {item}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
+    <section className="section-bg">
+      <div className="wrapper">
+        <div className="section-spacing">
+          <div className="space-y-1.5">
+            <h2 className="section-title">skills</h2>
+            <br />
+            <p className="section-subtitle">Technologies & Tools</p>
+          </div>
+          <div className="flex items-center flex-wrap gap-y-3.5 gap-x-3">
+            {skills.map((skill) => (
+              <div
+                key={skill.title}
+                className="shadow-sm py-2 px-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 flex items-center gap-x-2"
+              >
+                <img
+                  src={`https://skillicons.dev/icons?i=${skill.icon}&theme=${theme}`}
+                  alt={`${skill.title} icon`}
+                  className="shadow-sm border-2 dark:border-slate-700 rounded-xl size-11"
+                />
+                <span className="text-slate-700 font-montserrat dark:text-slate-300 font-medium">
+                  {skill.title}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

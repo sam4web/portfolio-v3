@@ -1,4 +1,3 @@
-import useStore from "@/store";
 import { createElement } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { FiMail } from "react-icons/fi";
@@ -19,7 +18,11 @@ const SocialItem = ({ url, title, icon }) => {
 };
 
 const Footer = () => {
-  const social = useStore((state) => state.social);
+  const social = {
+    github: "https://github.com/sam4web",
+    linkedin: "https://www.linkedin.com/in/sijal-manandhar-9914b6247/",
+    email: "sijal.m06@gmail.com",
+  };
 
   return (
     <footer>

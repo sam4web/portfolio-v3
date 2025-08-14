@@ -1,9 +1,8 @@
-import useStore from "@/store";
+import { useModal } from "@/context/ModalContext";
 import { useEffect } from "react";
 
 const Modal = () => {
-  const senderName = useStore((state) => state.senderName);
-  const closeModal = useStore((state) => state.closeModal);
+  const { senderName, closeModal } = useModal();
 
   useEffect(() => {
     window.addEventListener("scroll", closeModal);

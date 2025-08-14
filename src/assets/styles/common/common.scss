@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply bg-primary hover:opacity-80 text-light shadow-sm px-6 py-3 text-base lg:text-lg rounded-sm font-montserrat font-medium cursor-pointer outline-none;
+    @apply bg-primary hover:opacity-80 text-light shadow-sm px-6 py-3 text-base lg:text-lg rounded-lg font-montserrat font-medium cursor-pointer outline-none;
 
     &:disabled {
       @apply opacity-45 cursor-not-allowed;
@@ -8,7 +8,7 @@
   }
 
   .main-title {
-    @apply md:pb-2 text-4xl lg:text-[64px] font-montserrat text-primary font-bold leading-tight;
+    @apply md:pb-2 text-4xl lg:text-6xl font-montserrat text-primary font-bold leading-tight lg:leading-[1.27];
   }
 
   .paragraph-text {

@@ -1,26 +1,28 @@
-import Header from './header/Header';
-import Sidenav from './header/Sidenav.jsx';
-import ThemeToggler from './header/ThemeToggler';
-import LogoText from './header/LogoText';
+import Header from "./header";
+import Sidenav from "./header/Sidenav.jsx";
+import ThemeToggler from "./header/ThemeToggler";
+import LogoText from "./header/LogoText";
 
-import Emoji from './common/Emoji';
-import Loader from './common/Loader';
-import Modal from './common/Modal';
+import Emoji from "./common/Emoji";
+import Loader from "./common/Loader";
+import Modal from "./common/Modal";
 
-import Hero from './home/Hero';
-import About from './home/About';
-import Projects from './home/project/Projects';
-import Skills from './home/Skills';
-import Contact from './home/contact/Contact';
+import Hero from "./home/Hero";
+import About from "./home/About";
+import Projects from "./home/projects/Projects";
+import Skills from "./home/Skills";
+import Contact from "./home/contact/Contact";
 
-import TableData from './archieve/TableData';
+import TableData from "./archieve/TableData";
 
-import ContactInfo from './home/contact/ContactInfo';
-import ContactForm from './home/contact/ContactForm';
+import ContactInfo from "./home/contact/ContactInfo";
+import ContactForm from "./home/contact/ContactForm";
 
-import ProjectItem from './home/project/ProjectItem';
+import ProjectItem from "./home/projects/ProjectItem";
 
-import Footer from './footer/Footer';
+import Footer from "./footer";
+
+import BaseLayout from "./layout/BaseLayout";
 
 export {
   Header,
@@ -40,4 +42,5 @@ export {
   ContactForm,
   ProjectItem,
   Modal,
+  BaseLayout,
 };

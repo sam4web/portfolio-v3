@@ -1,4 +1,4 @@
-import BaseLayout from "@/layout/BaseLayout";
+import { BaseLayout } from "@/components";
 import { Archive, Home, Resume, NotFound } from "@/pages";
 
 import {
@@ -16,8 +16,8 @@ const router = createBrowserRouter(
         <Route path="resume" element={<Resume />} />
         <Route path="*" element={<NotFound />} />
       </Route>
-    </>
-  )
+    </>,
+  ),
 );
 
 export default router;

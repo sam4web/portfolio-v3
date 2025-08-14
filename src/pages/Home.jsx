@@ -1,12 +1,10 @@
 import { About, Contact, Hero, Modal, Projects, Skills } from "@/components";
-import usePageTitle from "@/hooks/usePageTitle";
-import useStore from "@/store";
+import { ModalProvider, useModal } from "@/context/ModalContext";
+import useTitle from "@/hooks/useTitle";
 import ScrollAnimation from "react-animate-on-scroll";
 
-const Home = () => {
-  usePageTitle("Sam4Web | Sijal Manandhar");
-
-  const showModal = useStore((state) => state.showModal);
+const HomeSections = () => {
+  const { showModal } = useModal();
 
   return (
     <section className="h-full">
@@ -30,6 +28,16 @@ const Home = () => {
         <Contact />
       </ScrollAnimation>
     </section>
+  );
+};
+
+const Home = () => {
+  useTitle("Sam4Web | Sijal Manandhar");
+
+  return (
+    <ModalProvider>
+      <HomeSections />
+    </ModalProvider>
   );
 };
 

@@ -1,4 +1,4 @@
-import useStore from "@/store";
+import { useModal } from "@/context/ModalContext";
 import { useState } from "react";
 
 const ContactForm = () => {
@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const openModal = useStore((state) => state.openModal);
+  const { openModal } = useModal();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="bg-slate-200 dark:bg-slate-800 rounded-lg">
+      <div className="bg-slate-200 dark:bg-slate-800 rounded-xl">
         <div className="space-y-2 md:space-y-3.5 px-4 py-3 md:px-6 md:py-5 ">
           <h3 className="text-lg lg:text-xl font-montserrat font-semibold capitalize text-primary">
             send message

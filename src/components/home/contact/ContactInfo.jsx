@@ -1,12 +1,15 @@
-import useStore from '@/store';
-import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
 const ContactInfo = () => {
-  const info = useStore((state) => state.info);
+  const info = {
+    email: "sijal.m06@gmail.com",
+    phone: "+977 9860334526",
+    address: "Kalanki, Kathmandu, Nepal.",
+  };
 
   return (
-    <div className='lg:space-y-6 lg:block flex flex-wrap gap-x-6 gap-y-3'>
-      <div className='contact-info'>
+    <div className="lg:space-y-6 lg:block flex flex-wrap gap-x-6 gap-y-3">
+      <div className="contact-info">
         <span>
           <FiMapPin />
         </span>
@@ -16,7 +19,7 @@ const ContactInfo = () => {
         </div>
       </div>
 
-      <div className='contact-info'>
+      <div className="contact-info">
         <span>
           <FiPhone />
         </span>
@@ -26,13 +29,13 @@ const ContactInfo = () => {
         </div>
       </div>
 
-      <div className='contact-info'>
+      <div className="contact-info">
         <span>
           <FiMail />
         </span>
         <div>
           <h4>Email</h4>
-          <a href={`mailto:${info.email}`} target='_blank'>
+          <a href={`mailto:${info.email}`} target="_blank">
             {info.email}
           </a>
         </div>

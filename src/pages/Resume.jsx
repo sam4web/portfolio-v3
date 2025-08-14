@@ -1,16 +1,16 @@
 import { useState } from "react";
-import usePageTitle from "@/hooks/usePageTitle";
+import useTitle from "@/hooks/useTitle";
 import { Document, Page, pdfjs } from "react-pdf";
 import { FiDownload, FiZoomIn, FiZoomOut } from "react-icons/fi";
 import resume from "/resume2024.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
+  import.meta.url,
 ).toString();
 
 const Resume = () => {
-  usePageTitle("Resume | Sijal Manandhar");
+  useTitle("Resume | Sijal Manandhar");
 
   const [showDownloadBtn, setShowDownloadBtn] = useState(false);
   const [scale, setScale] = useState(1.2);
