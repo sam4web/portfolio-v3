@@ -34,12 +34,12 @@ const Skills = () => {
             {skills.map((skill) => (
               <div
                 key={skill.title}
-                className="shadow-sm py-2 px-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 flex items-center gap-x-2"
+                className="shadow-sm py-1.5 px-1.5 lg:py-2 lg:px-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 flex items-center gap-x-2"
               >
                 <img
                   src={`https://skillicons.dev/icons?i=${skill.icon}&theme=${theme}`}
                   alt={`${skill.title} icon`}
-                  className="shadow-sm border-2 dark:border-slate-700 rounded-xl size-11"
+                  className="shadow-sm border-2 dark:border-slate-700 rounded-xl size-9 lg:size-11"
                 />
                 <span className="text-slate-700 font-montserrat dark:text-slate-300 font-medium">
                   {skill.title}
